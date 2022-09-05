@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Negroni",
+    "ingredients": [
+      {
+        "name": "gin",
+        "amount": "2 cl"
+      },
+      {
+        "name": "campari",
+        "amount": "2 cl"
+      },
+      {
+        "name": "vermouth rosso",
+        "amount": "2 cl"
+      },
+      {
+        "name": "orange",
+        "amount": "0.125 pc."
+      }
+    ]
+  },
+  {
+    "name": "Old Fashioned",
+    "ingredients": [
+      {
+        "name": "bourbon",
+        "amount": "4 cl"
+      },
+      {
+        "name": "aromatic bitters",
+        "amount": "3 dashes"
+      },
+      {
+        "name": "orange bitters",
+        "amount": "3 dashes"
+      },
+      {
+        "name": "orange",
+        "amount": "0.125 pc."
+      }
+    ]
+  }
+]

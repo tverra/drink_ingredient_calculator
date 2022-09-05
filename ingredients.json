@@ -1,0 +1,92 @@
+[
+  {
+    "name": "gin",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 239.90,
+        "type": "Arctic Distilled Gin"
+      },
+      {
+        "amount": "7 dl",
+        "price": 329.90,
+        "type": "Arctic Distilled Gin"
+      },
+      {
+        "amount": "1 l",
+        "price": 449.90,
+        "type": "Gibson's London Dry Gin"
+      }
+    ]
+  },
+  {
+    "name": "campari",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 264.90,
+        "type": "Campari Bitter"
+      },
+      {
+        "amount": "7 dl",
+        "price": 349.90,
+        "type": "Campari Bitter"
+      }
+    ]
+  },
+  {
+    "name": "vermouth rosso",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 114.90,
+        "type": "Martini Rosso"
+      },
+      {
+        "amount": "1 l",
+        "price": 204.90,
+        "type": "Martini Rosso"
+      }
+    ]
+  },
+  {
+    "name": "orange",
+    "alternatives": [
+      {
+        "amount": "1 pc.",
+        "price": 12.57,
+        "type": "Orange per kilo"
+      }
+    ]
+  },
+  {
+    "name": "bourbon",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 409.90,
+        "type": "Four Roses Kentucky Straight Bourbon"
+      }
+    ]
+  },
+  {
+    "name": "aromatic bitters",
+    "alternatives": [
+      {
+        "amount": "2 dl",
+        "price": 239.90,
+        "type": "Angostura Aromatic Bitters"
+      }
+    ]
+  },
+  {
+    "name": "orange bitters",
+    "alternatives": [
+      {
+        "amount": "1 dl",
+        "price": 154.90,
+        "type": "Angostura Orange Bitters"
+      }
+    ]
+  }
+]
