@@ -1,6 +1,7 @@
 [
   {
-    "name": "gin",
+    "id": "gin",
+    "name": "Gin",
     "alternatives": [
       {
         "amount": "5 dl",
@@ -20,7 +21,30 @@
     ]
   },
   {
-    "name": "campari",
+    "id": "gin_citrus",
+    "name": "Gin Citrus",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 349.90,
+        "type": "Gordon's Sicilian Lemon Gin"
+      }
+    ]
+  },
+  {
+    "id": "chartreuse_green",
+    "name": "Chartreuse Green",
+    "alternatives": [
+      {
+        "amount": "35 cl",
+        "price": 389.90,
+        "type": "Chartreuse Grønn"
+      }
+    ]
+  },
+  {
+    "id": "campari",
+    "name": "Campari Bitter",
     "alternatives": [
       {
         "amount": "5 dl",
@@ -35,7 +59,8 @@
     ]
   },
   {
-    "name": "vermouth rosso",
+    "id": "vermouth_rosso",
+    "name": "Vermouth Rosso",
     "alternatives": [
       {
         "amount": "5 dl",
@@ -50,17 +75,8 @@
     ]
   },
   {
-    "name": "orange",
-    "alternatives": [
-      {
-        "amount": "1 pc.",
-        "price": 12.57,
-        "type": "Orange per kilo"
-      }
-    ]
-  },
-  {
-    "name": "bourbon",
+    "id": "bourbon",
+    "name": "Bourbon",
     "alternatives": [
       {
         "amount": "7 dl",
@@ -70,7 +86,471 @@
     ]
   },
   {
-    "name": "aromatic bitters",
+    "id": "dry_vermouth",
+    "name": "Dry Vermouth",
+    "alternatives": [
+      {
+        "amount": "7.5 dl",
+        "price": 169.90,
+        "type": "Cinzano Extra Dry"
+      },
+      {
+        "amount": "1 l",
+        "price": 204.90,
+        "type": "Martini Extra Dry"
+      }
+    ]
+  },
+  {
+    "id": "tequila",
+    "name": "Tequila",
+    "alternatives": [
+      {
+        "amount": "4 cl",
+        "price": 59.90,
+        "type": "Sierra Tequila Silver"
+      },
+      {
+        "amount": "2 dl",
+        "price": 269.90,
+        "type": "Patrón Silver"
+      },
+      {
+        "amount": "5 dl",
+        "price": 302.90,
+        "type": "Jose Cuervo Especial Silver"
+      },
+      {
+        "amount": "7 dl",
+        "price": 399.90,
+        "type": "Jose Cuervo Especial Silver"
+      }
+    ]
+  },
+  {
+    "id": "triple_sec",
+    "name": "Triple Sec",
+    "alternatives": [
+      {
+        "amount": "5 cl",
+        "price": 84.90,
+        "type": "Cointreau"
+      },
+      {
+        "amount": "35 cl",
+        "price": 244.90,
+        "type": "Cointreau"
+      },
+      {
+        "amount": "70 cl",
+        "price": 439.90,
+        "type": "Cointreau"
+      }
+    ]
+  },
+  {
+    "id": "white_rum",
+    "name": "White Rum",
+    "alternatives": [
+      {
+        "amount": "5 cl",
+        "price": 49.90,
+        "type": "Havana Club 3 Años"
+      },
+      {
+        "amount": "35 cl",
+        "price": 209.90,
+        "type": "Havana Club 3 Años"
+      },
+      {
+        "amount": "5 dl",
+        "price": 284.90,
+        "type": "Bacardi Carta Blanca"
+      },
+      {
+        "amount": "7 dl",
+        "price": 379.90,
+        "type": "Havana Club 3 Años"
+      },
+      {
+        "amount": "1 l",
+        "price": 519.90,
+        "type": "Bacardi Carta Blanca"
+      }
+    ]
+  },
+  {
+    "id": "dark_rum",
+    "name": "Dark Rum",
+    "alternatives": [
+      {
+        "amount": "5 cl",
+        "price": 54.90,
+        "type": "Havana Club 7 Años"
+      },
+      {
+        "amount": "7 dl",
+        "price": 434.90,
+        "type": "Havana Club 7 Años"
+      }
+    ]
+  },
+  {
+    "id": "aged_rum",
+    "name": "Aged Rum",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 659.90,
+        "type": "Diplomático Reserva Exclusiva 12 Anejo"
+      }
+    ]
+  },
+  {
+    "id": "cachaca",
+    "name": "Cachaça",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 379.90,
+        "type": "Cachaca 51"
+      }
+    ]
+  },
+  {
+    "id": "aperol",
+    "name": "Aperol",
+    "alternatives": [
+      {
+        "amount": "35 cl",
+        "price": 149.90,
+        "type": "Aperol"
+      },
+      {
+        "amount": "7 dl",
+        "price": 239.90,
+        "type": "Aperol"
+      },
+      {
+        "amount": "1 l",
+        "price": 299.90,
+        "type": "Aperol"
+      }
+    ]
+  },
+  {
+    "id": "vodka",
+    "name": "Vodka",
+    "alternatives": [
+      {
+        "amount": "5 cl",
+        "price": 49.90,
+        "type": "Absolut Vodka"
+      },
+      {
+        "amount": "35 cl",
+        "price": 179.90,
+        "type": "Smirnoff No. 21"
+      },
+      {
+        "amount": "5 dl",
+        "price": 234.90,
+        "type": "Smirnoff No. 21"
+      },
+      {
+        "amount": "7 dl",
+        "price": 319.90,
+        "type": "Smirnoff No. 21"
+      },
+      {
+        "amount": "1 l",
+        "price": 439.90,
+        "type": "Smirnoff No. 21"
+      }
+    ]
+  },
+  {
+    "id": "coffee_liqueur",
+    "name": "Coffee Liqueur",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 219.90,
+        "type": "Kahlua"
+      },
+      {
+        "amount": "7 dl",
+        "price": 299.90,
+        "type": "Kahlua"
+      }
+    ]
+  },
+  {
+    "id": "cherry_liqueur",
+    "name": "Cherry Liqueur",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 329.90,
+        "type": "Luxardo Maraschino Originale"
+      }
+    ]
+  },
+  {
+    "id": "ginger_liqueur",
+    "name": "Ginger Liqueur",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 274.90,
+        "type": "Cartron Liqueur Ginger"
+      }
+    ]
+  },
+  {
+    "id": "disaronno_amaretto",
+    "name": "DiSaronno Amaretto",
+    "alternatives": [
+      {
+        "amount": "35 cl",
+        "price": 184.90,
+        "type": "DiSaronno Amaretto"
+      },
+      {
+        "amount": "5 dl",
+        "price": 260.00,
+        "type": "DiSaronno Amaretto"
+      }
+    ]
+  },
+  {
+    "id": "whisky",
+    "name": "Whisky",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 259.90,
+        "type": "Johnnie Walker Red Label"
+      },
+      {
+        "amount": "7 dl",
+        "price": 379.90,
+        "type": "Johnnie Walker Red Label"
+      }
+    ]
+  },
+  {
+    "id": "whiskey",
+    "name": "Whisky",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 49.90,
+        "type": "Jameson"
+      },
+      {
+        "amount": "35 dl",
+        "price": 224.90,
+        "type": "Jameson"
+      },
+      {
+        "amount": "50 dl",
+        "price": 319.90,
+        "type": "Jameson"
+      },
+      {
+        "amount": "70 dl",
+        "price": 409.90,
+        "type": "Jameson"
+      },
+      {
+        "amount": "100 dl",
+        "price": 574.90,
+        "type": "Jameson"
+      }
+    ]
+  },
+  {
+    "id": "whisky_smoked",
+    "name": "Whisky Smoked",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 520.50,
+        "type": "Johnnie Walker Double Black"
+      }
+    ]
+  },
+  {
+    "id": "whisky_rye",
+    "name": "Whisky Rye",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 524.90,
+        "type": "Bulleit 95 Rye"
+      }
+    ]
+  },
+  {
+    "id": "cognac",
+    "name": "Cognac",
+    "alternatives": [
+      {
+        "amount": "5 cl",
+        "price": 59.90,
+        "type": "Soerlie V.S."
+      },
+      {
+        "amount": "35 cl",
+        "price": 199.90,
+        "type": "Soerlie V.S."
+      },
+      {
+        "amount": "70 cl",
+        "price": 449.00,
+        "type": "Soerlie V.S."
+      }
+    ]
+  },
+  {
+    "id": "dom_benedictine",
+    "name": "D.O.M. Bénédictine",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 484.90,
+        "type": "D.O.M. Bénédictine"
+      }
+    ]
+  },
+  {
+    "id": "cocchi_rosa_americano",
+    "name": "Cocchi Rosa Americano",
+    "alternatives": [
+      {
+        "amount": "75 cl",
+        "price": 323.90,
+        "type": "Cocchi Rosa Americano"
+      }
+    ]
+  },
+  {
+    "id": "rhum_agricole",
+    "name": "Agricole Rhum",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 499.60,
+        "type": "Clément Rhum Agricole Blanc"
+      }
+    ]
+  },
+  {
+    "id": "absente",
+    "name": "Absente",
+    "alternatives": [
+      {
+        "amount": "1 dl",
+        "price": 122.90,
+        "type": "Absente 55"
+      },
+      {
+        "amount": "7 dl",
+        "price": 569.90,
+        "type": "Absente 55"
+      }
+    ]
+  },
+  {
+    "id": "fernet_branca",
+    "name": "Fernet Branca",
+    "alternatives": [
+      {
+        "amount": "1 dl",
+        "price": 84.90,
+        "type": "Fernet Branca"
+      },
+      {
+        "amount": "5 dl",
+        "price": 329.90,
+        "type": "Fernet Branca"
+      },
+      {
+        "amount": "1 l",
+        "price": 619.90,
+        "type": "Fernet Branca"
+      }
+    ]
+  },
+  {
+    "id": "pisco",
+    "name": "Pisco",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 459.90,
+        "type": "Barsol Pisco Quebranta"
+      }
+    ]
+  },
+  {
+    "id": "lillet_blanc",
+    "name": "Lillet Blanc",
+    "alternatives": [
+      {
+        "amount": "75 cl",
+        "price": 199.90,
+        "type": "Lillet Blanc"
+      }
+    ]
+  },
+  {
+    "id": "vermouth_bianco",
+    "name": "Vermouth Bianco",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 114.90,
+        "type": "Martini Bianco"
+      },
+      {
+        "amount": "1 l",
+        "price": 204.90,
+        "type": "Martini Bianco"
+      }
+    ]
+  },
+  {
+    "id": "prosecco",
+    "name": "Prosecco",
+    "alternatives": [
+      {
+        "amount": "20 cl",
+        "price": 64.90,
+        "type": "Freixenet Prosecco Extra Dry Mini"
+      },
+      {
+        "amount": "75 cl",
+        "price": 119.90,
+        "type": "Riondo Prosecco Frizzante"
+      }
+    ]
+  },
+  {
+    "id": "red_wine",
+    "name": "Red Wine",
+    "alternatives": [
+      {
+        "amount": "75 cl",
+        "price": 100.00,
+        "type": "Red wine"
+      }
+    ]
+  },
+  {
+    "id": "angostura_aromatic_bitters",
+    "name": "Angostura Aromatic Bitters",
     "alternatives": [
       {
         "amount": "2 dl",
@@ -80,12 +560,722 @@
     ]
   },
   {
-    "name": "orange bitters",
+    "id": "peychauds_aromatic_bitters",
+    "name": "Peychauds Aromatic Bitters",
+    "alternatives": [
+      {
+        "amount": "14.8 cl",
+        "price": 249.00,
+        "type": "Peychauds Aromatic Bitters"
+      }
+    ]
+  },
+  {
+    "id": "orange_bitters",
+    "name": "Orange Bitters",
     "alternatives": [
       {
         "amount": "1 dl",
         "price": 154.90,
         "type": "Angostura Orange Bitters"
+      }
+    ]
+  },
+  {
+    "id": "agave_syrup",
+    "name": "Agave Syrup",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 165.00,
+        "type": "Monin Sirup Agave"
+      }
+    ]
+  },
+  {
+    "id": "lime_cordial",
+    "name": "Lime Cordial",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 179.00,
+        "type": "Monin Lime Syrup"
+      }
+    ]
+  },
+  {
+    "id": "orgeat_syrup",
+    "name": "Orgeat syrup",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 125.00,
+        "type": "Monin Sirup Almond"
+      }
+    ]
+  },
+  {
+    "id": "falernum_syrup",
+    "name": "Falernum syrup",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 179.00,
+        "type": "Monin Falernum Syrup"
+      }
+    ]
+  },
+  {
+    "id": "grenadine_syrup",
+    "name": "Grenadine syrup",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 125.00,
+        "type": "Monin Sirup Grenadine Red"
+      }
+    ]
+  },
+  {
+    "id": "violet_syrup",
+    "name": "Violet syrup",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 125.00,
+        "type": "Monin Sirup Violet"
+      }
+    ]
+  },
+  {
+    "id": "raspberry_syrup",
+    "name": "Raspberry syrup",
+    "alternatives": [
+      {
+        "amount": "1 l",
+        "price": 135.00,
+        "type": "Monin Sirup Bringebær"
+      }
+    ]
+  },
+  {
+    "id": "pineapple_syrup",
+    "name": "Pineapple syrup",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 125.00,
+        "type": "Monin Sirup Ananas"
+      }
+    ]
+  },
+  {
+    "id": "ginger_beer",
+    "name": "Ginger beer",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 40.50,
+        "type": "Fever-Tree Ginger Beer"
+      }
+    ]
+  },
+  {
+    "id": "grapefruit_soda",
+    "name": "Grapefruit soda",
+    "alternatives": [
+      {
+        "amount": "2 dl",
+        "price": 27.00,
+        "type": "Three Cents Pink Grapefruit Soda"
+      },
+      {
+        "amount": "24.2 l",
+        "price": 559.00,
+        "type": "Three Cents Pink Grapefruit Soda"
+      }
+    ]
+  },
+  {
+    "id": "coca_cola",
+    "name": "Coca-Cola",
+    "alternatives": [
+      {
+        "amount": "5 dl",
+        "price": 20.90,
+        "type": "Coca-Cola 0,5l"
+      },
+      {
+        "amount": "1.5 l",
+        "price": 29.90,
+        "type": "Coca-Cola 1,5l"
+      },
+      {
+        "amount": "6 l",
+        "price": 84.90,
+        "type": "Coca-Cola 4stk x 1,5l"
+      }
+    ]
+  },
+  {
+    "id": "tomato_juice",
+    "name": "Tomato juice",
+    "alternatives": [
+      {
+        "amount": "1 l",
+        "price": 24.90,
+        "type": "Rynkeby Naturig Tomatjuice 1l"
+      }
+    ]
+  },
+  {
+    "id": "pineapple_juice",
+    "name": "Pineapple juice",
+    "alternatives": [
+      {
+        "amount": "1 l",
+        "price": 42.90,
+        "type": "Smak Ananasjuice 1l"
+      }
+    ]
+  },
+  {
+    "id": "cranberry_juice",
+    "name": "Cranberry juice",
+    "alternatives": [
+      {
+        "amount": "33 cl",
+        "price": 79.00,
+        "type": "Tranebærjuice"
+      }
+    ]
+  },
+  {
+    "id": "lemon",
+    "name": "Lemon",
+    "alternatives": [
+      {
+        "amount": "1 pc",
+        "price": 7.98,
+        "type": "Lemon per kilo"
+      }
+    ],
+    "contains": [
+      {
+        "id": "lemon_peel",
+        "amount": "8 pc"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "4 cl"
+      },
+      {
+        "id": "lemon_wedge",
+        "amount": "8 pc"
+      },
+      {
+        "id": "lemon_wheel",
+        "amount": "8 pc"
+      }
+    ]
+  },
+  {
+    "id": "lemon_peel",
+    "name": "Lemon peel",
+    "contained_in": "lemon"
+  },
+  {
+    "id": "fresh_lemon_juice",
+    "name": "Fresh lemon juice",
+    "contained_in": "lemon"
+  },
+  {
+    "id": "lemon_wedge",
+    "name": "Lemon wedge",
+    "contained_in": "lemon"
+  },
+  {
+    "id": "lemon_wheel",
+    "name": "Lemon wheel",
+    "contained_in": "lemon"
+  },
+  {
+    "id": "lime",
+    "name": "Lime",
+    "alternatives": [
+      {
+        "amount": "1 pc",
+        "price": 4.87,
+        "type": "Lime per kilo"
+      }
+    ],
+    "contains": [
+      {
+        "id": "lime_peel",
+        "amount": "8 pc"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "lime_wedge",
+        "amount": "8 pc"
+      },
+      {
+        "id": "lime_wheel",
+        "amount": "8 pc"
+      }
+    ]
+  },
+  {
+    "id": "lime_peel",
+    "name": "Lime peel",
+    "contained_in": "lime"
+  },
+  {
+    "id": "fresh_lime_juice",
+    "name": "Lime juice",
+    "contained_in": "lime"
+  },
+  {
+    "id": "lime_wedge",
+    "name": "Lime peel",
+    "contained_in": "lime"
+  },
+  {
+    "id": "lime_wheel",
+    "name": "Lime peel",
+    "contained_in": "lime"
+  },
+  {
+    "id": "orange",
+    "name": "Orange",
+    "alternatives": [
+      {
+        "amount": "1 pc",
+        "price": 12.57,
+        "type": "Orange per kilo"
+      }
+    ],
+    "contains": [
+      {
+        "id": "orange_peel",
+        "amount": "8 pc"
+      },
+      {
+        "id": "fresh_orange_juice",
+        "amount": "4 cl"
+      },
+      {
+        "id": "orange_wedge",
+        "amount": "8 pc"
+      },
+      {
+        "id": "orange_wheel",
+        "amount": "8 pc"
+      }
+    ]
+  },
+  {
+    "id": "orange_peel",
+    "name": "Orange peel",
+    "contained_in": "orange"
+  },
+  {
+    "id": "fresh_orange_juice",
+    "name": "Orange juice",
+    "contained_in": "orange"
+  },
+  {
+    "id": "orange_wedge",
+    "name": "Orange wedge",
+    "contained_in": "orange"
+  },
+  {
+    "id": "orange_wheel",
+    "name": "Orange wheel",
+    "contained_in": "orange"
+  },
+  {
+    "id": "grapefruit",
+    "name": "Grapefruit",
+    "alternatives": [
+      {
+        "amount": "1 pc",
+        "price": 16.90,
+        "type": "Grapefruit per piece"
+      }
+    ],
+    "contains": [
+      {
+        "id": "grapefruit_peel",
+        "amount": "8 pc"
+      },
+      {
+        "id": "fresh_grapefruit_juice",
+        "amount": "4 cl"
+      },
+      {
+        "id": "grapefruit_wedge",
+        "amount": "8 pc"
+      },
+      {
+        "id": "grapefruit_wheel",
+        "amount": "8 pc"
+      }
+    ]
+  },
+  {
+    "id": "pineapple",
+    "name": "Pineapple",
+    "alternatives": [
+      {
+        "amount": "1 pc",
+        "price": 33.90,
+        "type": "Pineapple per piece"
+      }
+    ],
+    "contains": [
+      {
+        "id": "pineapple_slice",
+        "amount": "20 pc"
+      }
+    ]
+  },
+  {
+    "id": "pineapple_slice",
+    "name": "Pineapple slice",
+    "contained_in": "pineapple"
+  },
+  {
+    "id": "grapefruit_peel",
+    "name": "Grapefruit peel",
+    "contained_in": "grapefruit"
+  },
+  {
+    "id": "fresh_grapefruit_juice",
+    "name": "Grapefruit juice",
+    "contained_in": "grapefruit"
+  },
+  {
+    "id": "grapefruit_wedge",
+    "name": "Grapefruit wedge",
+    "contained_in": "grapefruit"
+  },
+  {
+    "id": "grapefruit_wheel",
+    "name": "Grapefruit wheel",
+    "contained_in": "grapefruit"
+  },
+  {
+    "id": "peach",
+    "name": "Peach",
+    "alternatives": [
+      {
+        "amount": "1 pc",
+        "price": 8.90,
+        "type": "Peach per piece"
+      }
+    ]
+  },
+  {
+    "id": "marachino_cherry",
+    "name": "Marachino cherry",
+    "alternatives": [
+      {
+        "amount": "6 pc",
+        "price": 34.90,
+        "type": "Dr. Oetker Røde Coctailbær 100g"
+      }
+    ]
+  },
+  {
+    "id": "fresh_mint",
+    "name": "Fresh mint",
+    "alternatives": [
+      {
+        "amount": "1 pc",
+        "price": 18.50,
+        "type": "Änglamark Krydderurt 8cm Mynte"
+      }
+    ]
+  },
+  {
+    "id": "fresh_thyme",
+    "name": "Fresh thyme",
+    "alternatives": [
+      {
+        "amount": "1 pc",
+        "price": 18.50,
+        "type": "Änglamark Krydderurt 8cm Timian"
+      }
+    ]
+  },
+  {
+    "id": "cherry_tomatoes",
+    "name": "Cherry tomatoes",
+    "alternatives": [
+      {
+        "amount": "12 pc",
+        "price": 31.90,
+        "type": "Coop Rød Cherrytomat 250g"
+      }
+    ]
+  },
+  {
+    "id": "worcester_sauce",
+    "name": "Worcester sauce",
+    "alternatives": [
+      {
+        "amount": "150 ml",
+        "price": 39.90,
+        "type": "Heinz Worcester Sauce 150ml"
+      }
+    ]
+  },
+  {
+    "id": "tabasco",
+    "name": "Tabasco",
+    "alternatives": [
+      {
+        "amount": "60 ml",
+        "price": 52.90,
+        "type": "Tabasco Pepper Sauce 60ml"
+      }
+    ]
+  },
+  {
+    "id": "celery_stalk",
+    "name": "Celery stalk",
+    "alternatives": [
+      {
+        "amount": "6 pc",
+        "price": 33.90,
+        "type": "Coop Stangselleri"
+      }
+    ]
+  },
+  {
+    "id": "bacon",
+    "name": "Bacon",
+    "alternatives": [
+      {
+        "amount": "6 pc",
+        "price": 27.90,
+        "type": "Coop Bacon uten Svor 130g"
+      }
+    ]
+  },
+  {
+    "id": "egg_white",
+    "name": "Egg white",
+    "alternatives": [
+      {
+        "amount": "1 l",
+        "price": 99.00,
+        "type": "Flytende Eggehvite, 1000 ml"
+      }
+    ]
+  },
+  {
+    "id": "coconut_milk",
+    "name": "Coconut milk",
+    "alternatives": [
+      {
+        "amount": "250 ml",
+        "price": 22.90,
+        "type": "Santa Maria Coconut Milk 250ml"
+      }
+    ]
+  },
+  {
+    "id": "coconut_cream",
+    "name": "Coconut cream",
+    "alternatives": [
+      {
+        "amount": "250 ml",
+        "price": 26.90,
+        "type": "Santa Maria Coconut Cream 250ml"
+      }
+    ]
+  },
+  {
+    "id": "cream",
+    "name": "Cream",
+    "alternatives": [
+      {
+        "amount": "3 dl",
+        "price": 24.90,
+        "type": "Tine Kremfløte 3 dl"
+      },
+      {
+        "amount": "7.5 dl",
+        "price": 54.90,
+        "type": "Tine Kremfløte 7.5 dl"
+      }
+    ]
+  },
+  {
+    "id": "orange_blossom_water",
+    "name": "Orange Blossom Water",
+    "alternatives": [
+      {
+        "amount": "275 ml",
+        "price": 91.00,
+        "type": "Appelsinblomstvann"
+      }
+    ]
+  },
+  {
+    "id": "olive_green",
+    "name": "Green Olive",
+    "alternatives": [
+      {
+        "amount": "20 pc",
+        "price": 24.50,
+        "type": "Coop Oliven med Paprika 235g"
+      }
+    ]
+  },
+  {
+    "id": "honey_syrup",
+    "name": "Honey syrup",
+    "alternatives": [
+      {
+        "amount": "7 dl",
+        "price": 125.00,
+        "type": "Monin sirup honning"
+      }
+    ]
+  },
+  {
+    "id": "demerara_sugar",
+    "name": "Demerara sugar",
+    "alternatives": [
+      {
+        "amount": "500 g",
+        "price": 27.50,
+        "type": "Dan Sukker Rørsukker Demerara Strø 500g"
+      }
+    ],
+    "contains": [
+      {
+        "id": "demerara_sugar_syrup",
+        "amount": "6.5 dl"
+      }
+    ]
+  },
+  {
+    "id": "demerara_sugar_syrup",
+    "name": "Demerara sugar syrup",
+    "contained_in": "demerara_sugar"
+  },
+  {
+    "id": "sugar",
+    "name": "Sugar",
+    "alternatives": [
+      {
+        "amount": "1 kg",
+        "price": 25.90,
+        "type": "Dansukker Sukker 1kg"
+      }
+    ],
+    "contains": [
+      {
+        "id": "sugar_syrup",
+        "amount": "11 dl"
+      }
+    ]
+  },
+  {
+    "id": "sugar_syrup",
+    "name": "Sugar syrup",
+    "contained_in": "sugar"
+  },
+  {
+    "id": "coffee_beans",
+    "name": "Coffee beans",
+    "alternatives": [
+      {
+        "amount": "500 g",
+        "price": 114.90,
+        "type": "Friele Hel Mørkbrent Frokostkaffe 500g"
+      }
+    ],
+    "contains": [
+      {
+        "id": "espresso",
+        "amount": "1.5 l"
+      },
+      {
+        "id": "coffee",
+        "amount": "8.33 l"
+      }
+    ]
+  },
+  {
+    "id": "espresso",
+    "name": "Espresso",
+    "contained_in": "coffee_beans"
+  },
+  {
+    "id": "coffee",
+    "name": "Coffee",
+    "contained_in": "coffee_beans"
+  },
+  {
+    "id": "flake_salt",
+    "name": "Flake Salt",
+    "alternatives": [
+      {
+        "amount": "170 g",
+        "price": 23.50,
+        "type": "Coop Flaksalt 170g"
+      }
+    ]
+  },
+  {
+    "id": "salt",
+    "name": "Salt",
+    "alternatives": [
+      {
+        "amount": "1 kg",
+        "price": 11.50,
+        "type": "Jozo Salt uten Jod 1kg"
+      }
+    ],
+    "contains": [
+      {
+        "id": "saline",
+        "amount": "87.87 l"
+      }
+    ]
+  },
+  {
+    "id": "saline",
+    "name": "Saline",
+    "contained_in": "salt"
+  },
+  {
+    "id": "pepper",
+    "name": "Pepper",
+    "alternatives": [
+      {
+        "amount": "22 g",
+        "price": 12.90,
+        "type": "Santa Maria Hel Sort Pepper 22g"
+      }
+    ]
+  },
+  {
+    "id": "soda_water",
+    "name": "Soda water",
+    "alternatives": [
+      {
+        "amount": "60 l",
+        "price": 259.90,
+        "type": "SodaStream kullsyrepatron, 60 liter"
       }
     ]
   }

@@ -1,43 +1,1293 @@
 [
   {
+    "id": "negroni",
     "name": "Negroni",
     "ingredients": [
       {
-        "name": "gin",
+        "id": "gin",
         "amount": "2 cl"
       },
       {
-        "name": "campari",
+        "id": "campari",
         "amount": "2 cl"
       },
       {
-        "name": "vermouth rosso",
+        "id": "vermouth_rosso",
         "amount": "2 cl"
       },
       {
-        "name": "orange",
-        "amount": "0.125 pc."
+        "id": "orange_peel",
+        "amount": "1 pc"
       }
     ]
   },
   {
+    "id": "old_fashioned",
     "name": "Old Fashioned",
     "ingredients": [
       {
-        "name": "bourbon",
+        "id": "bourbon",
+        "amount": "6 cl"
+      },
+      {
+        "id": "demerara_sugar_syrup",
+        "amount": "1 tsp"
+      },
+      {
+        "id": "angostura_aromatic_bitters",
+        "amount": "3 dashes"
+      },
+      {
+        "id": "orange_bitters",
+        "amount": "3 dashes"
+      },
+      {
+        "id": "orange_peel",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "dry_martini",
+    "name": "Dry Martini",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "6 cl"
+      },
+      {
+        "id": "dry_vermouth",
+        "amount": "1 cl"
+      },
+      {
+        "id": "lemon_peel",
+        "amount": "0.125 pc"
+      },
+      {
+        "id": "olive_green",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "margarita",
+    "name": "Margarita",
+    "ingredients": [
+      {
+        "id": "tequila",
         "amount": "4 cl"
       },
       {
-        "name": "aromatic bitters",
+        "id": "triple_sec",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "agave_syrup",
+        "amount": "1.5 cl"
+      },
+      {
+        "id": "flake_salt",
+        "amount": "4 g"
+      }
+    ]
+  },
+  {
+    "id": "daiquiri",
+    "name": "Daiquiri",
+    "ingredients": [
+      {
+        "id": "white_rum",
+        "amount": "5 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "2 cl"
+      }
+    ]
+  },
+  {
+    "id": "aperol_spritz",
+    "name": "Aperol Spritz",
+    "ingredients": [
+      {
+        "id": "aperol",
+        "amount": "8 cl"
+      },
+      {
+        "id": "prosecco",
+        "amount": "12 cl"
+      },
+      {
+        "id": "soda_water",
+        "amount": "4 cl"
+      },
+      {
+        "id": "orange_wedge",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "espresso_martini",
+    "name": "Espresso Martini",
+    "ingredients": [
+      {
+        "id": "vodka",
+        "amount": "5 cl"
+      },
+      {
+        "id": "coffee_liqueur",
+        "amount": "3 cl"
+      },
+      {
+        "id": "espresso",
+        "amount": "4 cl"
+      }
+    ]
+  },
+  {
+    "id": "manhattan",
+    "name": "Manhattan",
+    "ingredients": [
+      {
+        "id": "bourbon",
+        "amount": "5 cl"
+      },
+      {
+        "id": "vermouth_rosso",
+        "amount": "2 cl"
+      },
+      {
+        "id": "angostura_aromatic_bitters",
+        "amount": "2 dashes"
+      },
+      {
+        "id": "marachino_cherry",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "mojito",
+    "name": "Mojito",
+    "ingredients": [
+      {
+        "id": "white_rum",
+        "amount": "5 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_mint",
+        "amount": "0.2 pc"
+      },
+      {
+        "id": "soda_water",
+        "amount": "1 dl"
+      }
+    ]
+  },
+  {
+    "id": "whiskey_sour",
+    "name": "Whiskey Sour",
+    "ingredients": [
+      {
+        "id": "bourbon",
+        "amount": "5 cl"
+      },
+      {
+        "id": "angostura_aromatic_bitters",
+        "amount": "4 dashes"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "demerara_sugar_syrup",
+        "amount": "2 cl"
+      },
+      {
+        "id": "egg_white",
+        "amount": "2 cl"
+      },
+      {
+        "id": "lemon_peel",
+        "amount": "0.125 pc"
+      }
+    ]
+  },
+  {
+    "id": "moscow_mule",
+    "name": "Moscow Mule",
+    "ingredients": [
+      {
+        "id": "vodka",
+        "amount": "5 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "1 cl"
+      },
+      {
+        "id": "ginger_beer",
+        "amount": "1 dl"
+      }
+    ]
+  },
+  {
+    "id": "Boulevardier",
+    "name": "Boulevardier",
+    "ingredients": [
+      {
+        "id": "bourbon",
+        "amount": "2 cl"
+      },
+      {
+        "id": "vermouth_rosso",
+        "amount": "2 cl"
+      },
+      {
+        "id": "campari",
+        "amount": "2 cl"
+      },
+      {
+        "id": "orange_peel",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "penicillin",
+    "name": "Penicillin",
+    "ingredients": [
+      {
+        "id": "whisky",
+        "amount": "4 cl"
+      },
+      {
+        "id": "whisky_smoked",
+        "amount": "1 tsp"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "honey_syrup",
+        "amount": "2 cl"
+      },
+      {
+        "id": "ginger_liqueur",
+        "amount": "1.5 cl"
+      }
+    ]
+  },
+  {
+    "id": "paloma",
+    "name": "Paloma",
+    "ingredients": [
+      {
+        "id": "tequila",
+        "amount": "5 cl"
+      },
+      {
+        "id": "fresh_grapefruit_juice",
+        "amount": "1.5 cl"
+      },
+      {
+        "id": "grapefruit_soda",
+        "amount": "1 dl"
+      },
+      {
+        "id": "flake_salt",
+        "amount": "4 g"
+      }
+    ]
+  },
+  {
+    "id": "bloody_mary",
+    "name": "Bloody Mary",
+    "ingredients": [
+      {
+        "id": "vodka",
+        "amount": "5 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "1.5 cl"
+      },
+      {
+        "id": "tomato_juice",
+        "amount": "1 dl"
+      },
+      {
+        "id": "cherry_tomatoes",
+        "amount": "6 pc"
+      },
+      {
+        "id": "worcester_sauce",
+        "amount": "4 dashes"
+      },
+      {
+        "id": "tabasco",
+        "amount": "4 dashes"
+      },
+      {
+        "id": "celery_stalk",
+        "amount": "0.5 pc"
+      },
+      {
+        "id": "salt",
+        "amount": "1 pinch"
+      },
+      {
+        "id": "pepper",
+        "amount": "1 pinch"
+      },
+      {
+        "id": "olive_green",
+        "amount": "2 pc"
+      },
+      {
+        "id": "bacon",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "americano",
+    "name": "Americano",
+    "ingredients": [
+      {
+        "id": "campari",
+        "amount": "3 cl"
+      },
+      {
+        "id": "vermouth_rosso",
+        "amount": "3 cl"
+      },
+      {
+        "id": "orange_peel",
+        "amount": "1 pc"
+      },
+      {
+        "id": "lemon_peel",
+        "amount": "0.125 pc"
+      }
+    ]
+  },
+  {
+    "id": "french_75",
+    "name": "French 75",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "3 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "2 cl"
+      },
+      {
+        "id": "prosecco",
+        "amount": "12 cl"
+      }
+    ]
+  },
+  {
+    "id": "gimlet",
+    "name": "Gimlet",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "5 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "lime_cordial",
+        "amount": "3 cl"
+      },
+      {
+        "id": "lime_wedge",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "mai_tai",
+    "name": "Mai Tai",
+    "ingredients": [
+      {
+        "id": "dark_rum",
+        "amount": "3 cl"
+      },
+      {
+        "id": "aged_rum",
+        "amount": "3 cl"
+      },
+      {
+        "id": "triple_sec",
+        "amount": "1.5 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "orgeat_syrup",
+        "amount": "1 cl"
+      },
+      {
+        "id": "disaronno_amaretto",
+        "amount": "1 cl"
+      },
+      {
+        "id": "falernum_syrup",
+        "amount": "1 cl"
+      },
+      {
+        "id": "absente",
+        "amount": "1 dash"
+      }
+    ]
+  },
+  {
+    "id": "pisco_sour",
+    "name": "Pisco Sour",
+    "ingredients": [
+      {
+        "id": "pisco",
+        "amount": "4 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "1 cl"
+      },
+      {
+        "id": "egg_white",
+        "amount": "2 cl"
+      },
+      {
+        "id": "angostura_aromatic_bitters",
+        "amount": "3 drops"
+      }
+    ]
+  },
+  {
+    "id": "clover_club",
+    "name": "Clover Club",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "4 cl"
+      },
+      {
+        "id": "vermouth_bianco",
+        "amount": "1.5 cl"
+      },
+      {
+        "id": "raspberry_syrup",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "egg_white",
+        "amount": "2 cl"
+      }
+    ]
+  },
+  {
+    "id": "dark_n_stormy",
+    "name": "Dark 'n' Stormy",
+    "ingredients": [
+      {
+        "id": "dark_rum",
+        "amount": "4 cl"
+      },
+      {
+        "id": "ginger_beer",
+        "amount": "6 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "lime_wedge",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "gin_fizz",
+    "name": "Gin Fizz",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "5 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "2 cl"
+      },
+      {
+        "id": "angostura_aromatic_bitters",
         "amount": "3 dashes"
       },
       {
-        "name": "orange bitters",
+        "id": "egg_white",
+        "amount": "2 cl"
+      },
+      {
+        "id": "soda_water",
+        "amount": "4 cl"
+      },
+      {
+        "id": "lemon_peel",
+        "amount": "0.125 pc"
+      }
+    ]
+  },
+  {
+    "id": "caipirinha",
+    "name": "Caipirinha",
+    "ingredients": [
+      {
+        "id": "cachaca",
+        "amount": "6 cl"
+      },
+      {
+        "id": "lime",
+        "amount": "1 pc"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "4 tsp"
+      },
+      {
+        "id": "lime_wheel",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "pina_colada",
+    "name": "Piña Colada",
+    "ingredients": [
+      {
+        "id": "white_rum",
+        "amount": "5 cl"
+      },
+      {
+        "id": "dark_rum",
+        "amount": "2 cl"
+      },
+      {
+        "id": "pineapple_juice",
+        "amount": "8 cl"
+      },
+      {
+        "id": "coconut_milk",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "1 cl"
+      },
+      {
+        "id": "cream",
+        "amount": "1 cl"
+      },
+      {
+        "id": "saline",
+        "amount": "1 dash"
+      },
+      {
+        "id": "pineapple_slice",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "amaretto_sour",
+    "name": "Amaretto sour",
+    "ingredients": [
+      {
+        "id": "disaronno_amaretto",
+        "amount": "4 cl"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "2.5 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "angostura_aromatic_bitters",
         "amount": "3 dashes"
       },
       {
-        "name": "orange",
-        "amount": "0.125 pc."
+        "id": "egg_white",
+        "amount": "2 cl"
+      }
+    ]
+  },
+  {
+    "id": "vieuz_carre",
+    "name": "Vieux Carré",
+    "ingredients": [
+      {
+        "id": "bourbon",
+        "amount": "3 cl"
+      },
+      {
+        "id": "cognac",
+        "amount": "3 cl"
+      },
+      {
+        "id": "dom_benedictine",
+        "amount": "1.5 cl"
+      },
+      {
+        "id": "peychauds_aromatic_bitters",
+        "amount": "3 dashes"
+      }
+    ]
+  },
+  {
+    "id": "zombie",
+    "name": "Zombie",
+    "ingredients": [
+      {
+        "id": "rhum_agricole",
+        "amount": "3 cl"
+      },
+      {
+        "id": "dark_rum",
+        "amount": "3 cl"
+      },
+      {
+        "id": "white_rum",
+        "amount": "2 cl"
+      },
+      {
+        "id": "falernum_syrup",
+        "amount": "2 cl"
+      },
+      {
+        "id": "pineapple_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "1.5 dl"
+      },
+      {
+        "id": "fresh_grapefruit_juice",
+        "amount": "1 cl"
+      },
+      {
+        "id": "grenadine_syrup",
+        "amount": "1 cl"
+      }
+    ]
+  },
+  {
+    "id": "sazerac",
+    "name": "Sazerac",
+    "ingredients": [
+      {
+        "id": "whisky_rye",
+        "amount": "6 cl"
+      },
+      {
+        "id": "peychauds_aromatic_bitters",
+        "amount": "4 dashes"
+      },
+      {
+        "id": "absente",
+        "amount": "4 dashes"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "1 tsp"
+      },
+      {
+        "id": "lemon_peel",
+        "amount": "0.125 pc"
+      }
+    ]
+  },
+  {
+    "id": "corpse_reviver",
+    "name": "Corpse Reviver",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "2 cl"
+      },
+      {
+        "id": "vermouth_bianco",
+        "amount": "2 cl"
+      },
+      {
+        "id": "triple_sec",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "absente",
+        "amount": "1 dash"
+      },
+      {
+        "id": "egg_white",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_thyme",
+        "amount": "0.05 pc"
+      }
+    ]
+  },
+  {
+    "id": "vodka_martini",
+    "name": "Vodka Martini",
+    "ingredients": [
+      {
+        "id": "vodka",
+        "amount": "6 cl"
+      },
+      {
+        "id": "dry_vermouth",
+        "amount": "1 cl"
+      },
+      {
+        "id": "olive_green",
+        "amount": "2 pc"
+      },
+      {
+        "id": "lemon_peel",
+        "amount": "0.125 pc"
+      }
+    ]
+  },
+  {
+    "id": "old_cuban",
+    "name": "Old Cuban",
+    "ingredients": [
+      {
+        "id": "dark_rum",
+        "amount": "4 cl"
+      },
+      {
+        "id": "prosecco",
+        "amount": "4 cl"
+      },
+      {
+        "id": "angostura_aromatic_bitters",
+        "amount": "2 dashes"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_mint",
+        "amount": "0.1 pc"
+      }
+    ]
+  },
+  {
+    "id": "vesper",
+    "name": "Vesper",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "6 cl"
+      },
+      {
+        "id": "vodka",
+        "amount": "2 cl"
+      },
+      {
+        "id": "lillet_blanc",
+        "amount": "1 cl"
+      },
+      {
+        "id": "lemon_peel",
+        "amount": "0.125 pc"
+      }
+    ]
+  },
+  {
+    "id": "aviation",
+    "name": "Aviation",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "6 cl"
+      },
+      {
+        "id": "cherry_liqueur",
+        "amount": "1 cl"
+      },
+      {
+        "id": "violet_syrup",
+        "amount": "1 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "marachino_cherry",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "long_island_iced_tea",
+    "name": "Long Island Iced Tea",
+    "ingredients": [
+      {
+        "id": "vodka",
+        "amount": "1 cl"
+      },
+      {
+        "id": "white_rum",
+        "amount": "1 cl"
+      },
+      {
+        "id": "tequila",
+        "amount": "1 cl"
+      },
+      {
+        "id": "triple_sec",
+        "amount": "1 cl"
+      },
+      {
+        "id": "gin",
+        "amount": "1 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "2.5 cl"
+      },
+      {
+        "id": "coca_cola",
+        "amount": "2 dl"
+      },
+      {
+        "id": "lemon_peel",
+        "amount": "0.125 pc"
+      }
+    ]
+  },
+  {
+    "id": "bees_knees",
+    "name": "Bee's Knees",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "5 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "honey_syrup",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_orange_juice",
+        "amount": "1 cl"
+      },
+      {
+        "id": "orange_peel",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "bellini",
+    "name": "Bellini",
+    "ingredients": [
+      {
+        "id": "peach",
+        "amount": "1 pc"
+      },
+      {
+        "id": "prosecco",
+        "amount": "2 dl"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "2 tsp"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "1 cl"
+      }
+    ]
+  },
+  {
+    "id": "ramos_gin_fizz",
+    "name": "Ramos Gin Fizz",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "4 cl"
+      },
+      {
+        "id": "cream",
+        "amount": "1 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "1 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "1 cl"
+      },
+      {
+        "id": "sugar_syrup",
+        "amount": "1 cl"
+      },
+      {
+        "id": "orange_blossom_water",
+        "amount": "0.25 ml"
+      },
+      {
+        "id": "egg_white",
+        "amount": "4 cl"
+      },
+      {
+        "id": "soda_water",
+        "amount": "4 cl"
+      }
+    ]
+  },
+  {
+    "id": "cosmopolitan",
+    "name": "Cosmopolitan",
+    "ingredients": [
+      {
+        "id": "vodka",
+        "amount": "3 cl"
+      },
+      {
+        "id": "triple_sec",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "1.5 cl"
+      },
+      {
+        "id": "cranberry_juice",
+        "amount": "1.5 cl"
+      }
+    ]
+  },
+  {
+    "id": "hanky_panky",
+    "name": "Hanky-Panky",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "4 cl"
+      },
+      {
+        "id": "vermouth_rosso",
+        "amount": "4 cl"
+      },
+      {
+        "id": "fernet_branca",
+        "amount": "2 ml"
+      },
+      {
+        "id": "orange_peel",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "ti_punch",
+    "name": "Ti' Punch",
+    "ingredients": [
+      {
+        "id": "rhum_agricole",
+        "amount": "6 cl"
+      },
+      {
+        "id": "demerara_sugar_syrup",
+        "amount": "1 tsp"
+      },
+      {
+        "id": "lime_wheel",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "painkiller",
+    "name": "Painkiller",
+    "ingredients": [
+      {
+        "id": "aged_rum",
+        "amount": "4 cl"
+      },
+      {
+        "id": "pineapple_juice",
+        "amount": "8 cl"
+      },
+      {
+        "id": "fresh_orange_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "coconut_cream",
+        "amount": "2 cl"
+      }
+    ]
+  },
+  {
+    "id": "the_last_word",
+    "name": "The Last Word",
+    "ingredients": [
+      {
+        "id": "gin_citrus",
+        "amount": "2 cl"
+      },
+      {
+        "id": "chartreuse_green",
+        "amount": "2 cl"
+      },
+      {
+        "id": "cherry_liqueur",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "2 cl"
+      }
+    ]
+  },
+  {
+    "id": "bobby_burns",
+    "name": "Bobby Burns",
+    "ingredients": [
+      {
+        "id": "whisky",
+        "amount": "3 cl"
+      },
+      {
+        "id": "vermouth_rosso",
+        "amount": "3 cl"
+      },
+      {
+        "id": "dom_benedictine",
+        "amount": "1.5 cl"
+      },
+      {
+        "id": "lemon_peel",
+        "amount": "0.125 pc"
+      }
+    ]
+  },
+  {
+    "id": "irish_coffee",
+    "name": "Irish Coffee",
+    "ingredients": [
+      {
+        "id": "whiskey",
+        "amount": "4 cl"
+      },
+      {
+        "id": "coffee",
+        "amount": "2 dl"
+      },
+      {
+        "id": "demerara_sugar_syrup",
+        "amount": "2 tsp"
+      },
+      {
+        "id": "cream",
+        "amount": "5 cl"
+      }
+    ]
+  },
+  {
+    "id": "tommys_margarita",
+    "name": "Tommy's Margarita",
+    "ingredients": [
+      {
+        "id": "tequila",
+        "amount": "5 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "agave_syrup",
+        "amount": "2 cl"
+      },
+      {
+        "id": "flake_salt",
+        "amount": "4 g"
+      }
+    ]
+  },
+  {
+    "id": "blood_and_sand",
+    "name": "Blood & Sand",
+    "ingredients": [
+      {
+        "id": "whisky",
+        "amount": "2 cl"
+      },
+      {
+        "id": "vermouth_rosso",
+        "amount": "2 cl"
+      },
+      {
+        "id": "cherry_liqueur",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_orange_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "orange_peel",
+        "amount": "1 pc"
+      }
+    ]
+  },
+  {
+    "id": "corpse_reviver_2",
+    "name": "Corpse Reviver #2",
+    "ingredients": [
+      {
+        "id": "gin",
+        "amount": "2 cl"
+      },
+      {
+        "id": "triple_sec",
+        "amount": "2 cl"
+      },
+      {
+        "id": "lillet_blanc",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "2 cl"
+      },
+      {
+        "id": "absente",
+        "amount": "2 dashes"
+      }
+    ]
+  },
+  {
+    "id": "sidecar",
+    "name": "Sidecar",
+    "ingredients": [
+      {
+        "id": "cognac",
+        "amount": "4 cl"
+      },
+      {
+        "id": "triple_sec",
+        "amount": "4 cl"
+      },
+      {
+        "id": "fresh_lemon_juice",
+        "amount": "4 cl"
+      }
+    ]
+  },
+  {
+    "id": "pisco_punch",
+    "name": "Pisco Punch",
+    "ingredients": [
+      {
+        "id": "pisco",
+        "amount": "4 cl"
+      },
+      {
+        "id": "cocchi_rosa_americano",
+        "amount": "2 cl"
+      },
+      {
+        "id": "fresh_lime_juice",
+        "amount": "3 cl"
+      },
+      {
+        "id": "pineapple_juice",
+        "amount": "1 cl"
+      },
+      {
+        "id": "pineapple_syrup",
+        "amount": "3 cl"
+      },
+      {
+        "id": "red_wine",
+        "amount": "1 tsp"
+      },
+      {
+        "id": "peychauds_aromatic_bitters",
+        "amount": "2 dashes"
+      },
+      {
+        "id": "pineapple_slice",
+        "amount": "1 pc"
       }
     ]
   }
