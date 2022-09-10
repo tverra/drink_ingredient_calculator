@@ -7,6 +7,7 @@ environment:
 
 dependencies:
   args: ^2.0.0
+  decimal: ^2.3.0
   intl: ^0.17.0
 
 dev_dependencies:

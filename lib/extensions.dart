@@ -1,6 +1,7 @@
+import 'package:decimal/decimal.dart';
 import 'package:intl/intl.dart';
 
-extension DoubleFormatting on double {
+extension DecimalFormatting on Decimal {
   String formatPrice({String? locale}) {
     final NumberFormat format = NumberFormat('0.00', locale ?? 'nb_NO');
 
