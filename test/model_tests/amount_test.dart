@@ -853,6 +853,206 @@ void main() {
     });
   });
 
+  group('volume factory', () {
+    test('adds positive integer as millilitres', () {
+      final Amount amount = Amount.volume(ml: 4.toDecimal());
+      expect(amount.amount, 4.toDecimal());
+    });
+
+    test('adds negative integer as millilitres', () {
+      final Amount amount = Amount.volume(ml: -4.toDecimal());
+      expect(amount.amount, -4.toDecimal());
+    });
+
+    test('adds decimal number as millilitres', () {
+      final Amount amount = Amount.volume(ml: 4.4.toDecimal());
+      expect(amount.amount, 4.4.toDecimal());
+    });
+
+    test('adds zero millilitres', () {
+      final Amount amount = Amount.volume(ml: Decimal.zero);
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('adds positive integer as centilitres', () {
+      final Amount amount = Amount.volume(cl: 4.toDecimal());
+      expect(amount.amount, 40.toDecimal());
+    });
+
+    test('adds negative integer as centilitres', () {
+      final Amount amount = Amount.volume(cl: -4.toDecimal());
+      expect(amount.amount, -40.toDecimal());
+    });
+
+    test('adds decimal number as centilitres', () {
+      final Amount amount = Amount.volume(cl: 4.44.toDecimal());
+      expect(amount.amount, 44.4.toDecimal());
+    });
+
+    test('adds zero centilitres', () {
+      final Amount amount = Amount.volume(cl: Decimal.zero);
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('adds positive integer as decilitres', () {
+      final Amount amount = Amount.volume(dl: 4.toDecimal());
+      expect(amount.amount, 400.toDecimal());
+    });
+
+    test('adds negative integer as decilitres', () {
+      final Amount amount = Amount.volume(dl: -4.toDecimal());
+      expect(amount.amount, -400.toDecimal());
+    });
+
+    test('adds decimal number as decilitres', () {
+      final Amount amount = Amount.volume(dl: 4.444.toDecimal());
+      expect(amount.amount, 444.4.toDecimal());
+    });
+
+    test('adds zero decilitres', () {
+      final Amount amount = Amount.volume(dl: Decimal.zero);
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('adds positive integer as litres', () {
+      final Amount amount = Amount.volume(l: 4.toDecimal());
+      expect(amount.amount, 4000.toDecimal());
+    });
+
+    test('adds negative integer as litres', () {
+      final Amount amount = Amount.volume(l: -4.toDecimal());
+      expect(amount.amount, -4000.toDecimal());
+    });
+
+    test('adds decimal number as litres', () {
+      final Amount amount = Amount.volume(l: 4.4444.toDecimal());
+      expect(amount.amount, 4444.4.toDecimal());
+    });
+
+    test('adds zero litres', () {
+      final Amount amount = Amount.volume(l: Decimal.zero);
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('adding nothing returns amount', () {
+      final Amount amount = Amount.volume();
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('all the different values are added', () {
+      final Amount amount = Amount.volume(
+        ml: 4.toDecimal(),
+        cl: 3.toDecimal(),
+        dl: 2.toDecimal(),
+        l: 1.toDecimal(),
+      );
+
+      expect(amount.amount, 1234.toDecimal());
+    });
+
+    test('returned amount is volume', () {
+      final Amount amount = Amount.volume(ml: 224244.toDecimal());
+      expect(amount.type, AmountType.volume);
+    });
+  });
+
+  group('weight factory', () {
+    test('adds positive integer as grams', () {
+      final Amount amount = Amount.weight(g: 4.toDecimal());
+      expect(amount.amount, 4.toDecimal());
+    });
+
+    test('adds negative integer as grams', () {
+      final Amount amount = Amount.weight(g: -4.toDecimal());
+      expect(amount.amount, -4.toDecimal());
+    });
+
+    test('adds decimal number as grams', () {
+      final Amount amount = Amount.weight(g: 4.4.toDecimal());
+      expect(amount.amount, 4.4.toDecimal());
+    });
+
+    test('adds zero grams', () {
+      final Amount amount = Amount.weight(g: Decimal.zero);
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('adds positive integer as kilos', () {
+      final Amount amount = Amount.weight(kg: 4.toDecimal());
+      expect(amount.amount, 4000.toDecimal());
+    });
+
+    test('adds negative integer as kilos', () {
+      final Amount amount = Amount.weight(kg: -4.toDecimal());
+      expect(amount.amount, -4000.toDecimal());
+    });
+
+    test('adds decimal number as kilos', () {
+      final Amount amount = Amount.weight(kg: 4.4444.toDecimal());
+      expect(amount.amount, 4444.4.toDecimal());
+    });
+
+    test('adds zero kilos', () {
+      final Amount amount = Amount.weight(kg: Decimal.zero);
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('adding nothing returns amount', () {
+      final Amount amount = Amount.weight();
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('all the different values are added', () {
+      final Amount amount =
+          Amount.weight(g: 34.toDecimal(), kg: 1.2.toDecimal());
+
+      expect(amount.amount, 1234.toDecimal());
+    });
+
+    test('returned amount is weight', () {
+      final Amount amount = Amount.weight(g: 224244.toDecimal());
+      expect(amount.type, AmountType.weight);
+    });
+  });
+
+  group('pieces factory', () {
+    test('adds positive integer as pieces', () {
+      final Amount amount = Amount.pieces(pc: 4.toDecimal());
+      expect(amount.amount, 4.toDecimal());
+    });
+
+    test('adds negative integer as pieces', () {
+      final Amount amount = Amount.pieces(pc: -4.toDecimal());
+      expect(amount.amount, -4.toDecimal());
+    });
+
+    test('adds decimal number as pieces', () {
+      final Amount amount = Amount.pieces(pc: 4.4.toDecimal());
+      expect(amount.amount, 4.4.toDecimal());
+    });
+
+    test('adds zero pieces', () {
+      final Amount amount = Amount.pieces(pc: Decimal.zero);
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('adding nothing returns amount', () {
+      final Amount amount = Amount.pieces();
+      expect(amount.amount, Decimal.zero);
+    });
+
+    test('all the different values are added', () {
+      final Amount amount = Amount.pieces(pc: 1234.toDecimal());
+
+      expect(amount.amount, 1234.toDecimal());
+    });
+
+    test('returned amount is pieces', () {
+      final Amount amount = Amount.pieces(pc: 224244.toDecimal());
+      expect(amount.type, AmountType.pieces);
+    });
+  });
+
   group('getters', () {
     test('returns true only on isVolume if amount is volume', () {
       final Amount amount = Amount.fromInt(1, AmountType.volume);

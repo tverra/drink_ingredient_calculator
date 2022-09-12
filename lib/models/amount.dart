@@ -129,6 +129,48 @@ class Amount {
     return sum;
   }
 
+  factory Amount.volume({
+    Decimal? ml,
+    Decimal? cl,
+    Decimal? dl,
+    Decimal? l,
+  }) {
+    Decimal sum = Decimal.zero;
+
+    if (ml != null) {
+      sum += ml;
+    }
+    if (cl != null) {
+      sum += cl * Decimal.fromInt(10);
+    }
+    if (dl != null) {
+      sum += dl * Decimal.fromInt(100);
+    }
+    if (l != null) {
+      sum += l * Decimal.fromInt(1000);
+    }
+    return Amount(sum, AmountType.volume);
+  }
+
+  factory Amount.weight({Decimal? g, Decimal? kg}) {
+    Decimal sum = Decimal.zero;
+
+    if (g != null) {
+      sum += g;
+    }
+    if (kg != null) {
+      sum += kg * Decimal.fromInt(1000);
+    }
+    return Amount(sum, AmountType.weight);
+  }
+
+  factory Amount.pieces({Decimal? pc}) {
+    if (pc != null) {
+      return Amount(pc, AmountType.pieces);
+    }
+    return Amount.zero(AmountType.pieces);
+  }
+
   bool get isVolume => type == AmountType.volume;
 
   bool get isWeight => type == AmountType.weight;
