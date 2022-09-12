@@ -1,5 +1,6 @@
 import 'package:decimal/decimal.dart';
 import 'package:drink_calculator/constants.dart';
+import 'package:drink_calculator/extensions.dart';
 import 'package:drink_calculator/models/amount.dart';
 import 'package:test/test.dart';
 
@@ -165,10 +166,11 @@ void main() {
       );
     });
 
-    test('doubles are truncated to three decimal places', () {
-      final Amount amount = Amount.fromDouble(1.1234567890, AmountType.volume);
+    test('doubles are truncated to ten decimal places', () {
+      final Amount amount =
+          Amount.fromDouble(1.12345678912345, AmountType.volume);
 
-      expect(amount.amount, Decimal.parse('1.123'));
+      expect(amount.amount, Decimal.parse('1.1234567891'));
       expect(amount.type, AmountType.volume);
     });
 
@@ -727,7 +729,7 @@ void main() {
     });
   });
 
-  group('sumFromList constructor', () {
+  group('sumFromList factory', () {
     test('returns the sum of the given amounts', () {
       final List<Amount> amounts = <Amount>[];
 

@@ -1,5 +1,6 @@
 import 'package:decimal/decimal.dart';
 import 'package:drink_calculator/constants.dart';
+import 'package:drink_calculator/extensions.dart';
 import 'package:intl/intl.dart';
 
 enum AmountType {
@@ -27,7 +28,7 @@ class Amount {
         );
 
   Amount.fromDouble(double amount, this.type)
-      : amount = Decimal.parse(amount.toStringAsFixed(3)),
+      : amount = amount.toDecimal(),
         assert(
           amount == 0.0 || type != AmountType.none,
           'Values different than zero needs a type',
