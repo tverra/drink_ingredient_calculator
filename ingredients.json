@@ -2,7 +2,8 @@
   {
     "id": "gin",
     "name": "Gin",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 239.90,
@@ -23,7 +24,8 @@
   {
     "id": "gin_citrus",
     "name": "Gin Citrus",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 349.90,
@@ -34,7 +36,8 @@
   {
     "id": "chartreuse_green",
     "name": "Chartreuse Green",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "35 cl",
         "price": 389.90,
@@ -45,7 +48,8 @@
   {
     "id": "campari",
     "name": "Campari Bitter",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 264.90,
@@ -61,7 +65,8 @@
   {
     "id": "vermouth_rosso",
     "name": "Vermouth Rosso",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 114.90,
@@ -77,7 +82,8 @@
   {
     "id": "bourbon",
     "name": "Bourbon",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 409.90,
@@ -88,7 +94,8 @@
   {
     "id": "dry_vermouth",
     "name": "Dry Vermouth",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7.5 dl",
         "price": 169.90,
@@ -104,7 +111,8 @@
   {
     "id": "tequila",
     "name": "Tequila",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "4 cl",
         "price": 59.90,
@@ -130,7 +138,8 @@
   {
     "id": "triple_sec",
     "name": "Triple Sec",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 cl",
         "price": 84.90,
@@ -151,7 +160,8 @@
   {
     "id": "white_rum",
     "name": "White Rum",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 cl",
         "price": 49.90,
@@ -182,7 +192,8 @@
   {
     "id": "dark_rum",
     "name": "Dark Rum",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 cl",
         "price": 54.90,
@@ -198,7 +209,8 @@
   {
     "id": "aged_rum",
     "name": "Aged Rum",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 659.90,
@@ -209,7 +221,8 @@
   {
     "id": "cachaca",
     "name": "Cachaça",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 379.90,
@@ -220,7 +233,8 @@
   {
     "id": "aperol",
     "name": "Aperol",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "35 cl",
         "price": 149.90,
@@ -241,7 +255,8 @@
   {
     "id": "vodka",
     "name": "Vodka",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 cl",
         "price": 49.90,
@@ -272,7 +287,8 @@
   {
     "id": "coffee_liqueur",
     "name": "Coffee Liqueur",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 219.90,
@@ -288,7 +304,8 @@
   {
     "id": "cherry_liqueur",
     "name": "Cherry Liqueur",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 329.90,
@@ -299,7 +316,8 @@
   {
     "id": "ginger_liqueur",
     "name": "Ginger Liqueur",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 274.90,
@@ -310,7 +328,8 @@
   {
     "id": "disaronno_amaretto",
     "name": "DiSaronno Amaretto",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "35 cl",
         "price": 184.90,
@@ -326,7 +345,8 @@
   {
     "id": "whisky",
     "name": "Whisky",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 259.90,
@@ -342,7 +362,8 @@
   {
     "id": "whiskey",
     "name": "Whisky",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 49.90,
@@ -373,7 +394,8 @@
   {
     "id": "whisky_smoked",
     "name": "Whisky Smoked",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 520.50,
@@ -384,7 +406,8 @@
   {
     "id": "whisky_rye",
     "name": "Whisky Rye",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 524.90,
@@ -395,7 +418,8 @@
   {
     "id": "cognac",
     "name": "Cognac",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 cl",
         "price": 59.90,
@@ -416,7 +440,8 @@
   {
     "id": "dom_benedictine",
     "name": "D.O.M. Bénédictine",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 484.90,
@@ -427,7 +452,8 @@
   {
     "id": "cocchi_rosa_americano",
     "name": "Cocchi Rosa Americano",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "75 cl",
         "price": 323.90,
@@ -438,7 +464,8 @@
   {
     "id": "rhum_agricole",
     "name": "Agricole Rhum",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 499.60,
@@ -449,7 +476,8 @@
   {
     "id": "absente",
     "name": "Absente",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 dl",
         "price": 122.90,
@@ -465,7 +493,8 @@
   {
     "id": "fernet_branca",
     "name": "Fernet Branca",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 dl",
         "price": 84.90,
@@ -486,7 +515,8 @@
   {
     "id": "pisco",
     "name": "Pisco",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 459.90,
@@ -497,7 +527,8 @@
   {
     "id": "lillet_blanc",
     "name": "Lillet Blanc",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "75 cl",
         "price": 199.90,
@@ -508,7 +539,8 @@
   {
     "id": "vermouth_bianco",
     "name": "Vermouth Bianco",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 114.90,
@@ -524,7 +556,8 @@
   {
     "id": "prosecco",
     "name": "Prosecco",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "20 cl",
         "price": 64.90,
@@ -540,7 +573,8 @@
   {
     "id": "red_wine",
     "name": "Red Wine",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "75 cl",
         "price": 100.00,
@@ -551,7 +585,8 @@
   {
     "id": "angostura_aromatic_bitters",
     "name": "Angostura Aromatic Bitters",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "2 dl",
         "price": 239.90,
@@ -562,7 +597,8 @@
   {
     "id": "peychauds_aromatic_bitters",
     "name": "Peychauds Aromatic Bitters",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "14.8 cl",
         "price": 249.00,
@@ -573,7 +609,8 @@
   {
     "id": "orange_bitters",
     "name": "Orange Bitters",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 dl",
         "price": 154.90,
@@ -584,7 +621,8 @@
   {
     "id": "agave_syrup",
     "name": "Agave Syrup",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 165.00,
@@ -595,7 +633,8 @@
   {
     "id": "lime_cordial",
     "name": "Lime Cordial",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 179.00,
@@ -606,7 +645,8 @@
   {
     "id": "orgeat_syrup",
     "name": "Orgeat syrup",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 125.00,
@@ -617,7 +657,8 @@
   {
     "id": "falernum_syrup",
     "name": "Falernum syrup",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 179.00,
@@ -628,7 +669,8 @@
   {
     "id": "grenadine_syrup",
     "name": "Grenadine syrup",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 125.00,
@@ -639,7 +681,8 @@
   {
     "id": "violet_syrup",
     "name": "Violet syrup",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 125.00,
@@ -650,7 +693,8 @@
   {
     "id": "raspberry_syrup",
     "name": "Raspberry syrup",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 l",
         "price": 135.00,
@@ -661,7 +705,8 @@
   {
     "id": "pineapple_syrup",
     "name": "Pineapple syrup",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 125.00,
@@ -672,7 +717,8 @@
   {
     "id": "ginger_beer",
     "name": "Ginger beer",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 40.50,
@@ -683,7 +729,8 @@
   {
     "id": "grapefruit_soda",
     "name": "Grapefruit soda",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "2 dl",
         "price": 27.00,
@@ -699,7 +746,8 @@
   {
     "id": "coca_cola",
     "name": "Coca-Cola",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "5 dl",
         "price": 20.90,
@@ -720,7 +768,8 @@
   {
     "id": "tomato_juice",
     "name": "Tomato juice",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 l",
         "price": 24.90,
@@ -731,7 +780,8 @@
   {
     "id": "pineapple_juice",
     "name": "Pineapple juice",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 l",
         "price": 42.90,
@@ -742,7 +792,8 @@
   {
     "id": "cranberry_juice",
     "name": "Cranberry juice",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "33 cl",
         "price": 79.00,
@@ -753,154 +804,122 @@
   {
     "id": "lemon",
     "name": "Lemon",
-    "alternatives": [
+    "updated": "2022-09-11",
+    "options": [
       {
         "amount": "1 pc",
-        "price": 7.98,
+        "price": 6.31,
         "type": "Lemon per kilo"
       }
     ],
     "contains": [
       {
         "id": "lemon_peel",
-        "amount": "8 pc"
+        "name": "Lemon peel",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       },
       {
         "id": "fresh_lemon_juice",
-        "amount": "4 cl"
+        "name": "Fresh lemon juice",
+        "updated": "2022-09-11",
+        "equals_to": "4 cl"
       },
       {
         "id": "lemon_wedge",
-        "amount": "8 pc"
+        "name": "Lemon wedge",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       },
       {
         "id": "lemon_wheel",
-        "amount": "8 pc"
+        "name": "Lemon wheel",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       }
     ]
   },
   {
-    "id": "lemon_peel",
-    "name": "Lemon peel",
-    "contained_in": "lemon"
-  },
-  {
-    "id": "fresh_lemon_juice",
-    "name": "Fresh lemon juice",
-    "contained_in": "lemon"
-  },
-  {
-    "id": "lemon_wedge",
-    "name": "Lemon wedge",
-    "contained_in": "lemon"
-  },
-  {
-    "id": "lemon_wheel",
-    "name": "Lemon wheel",
-    "contained_in": "lemon"
-  },
-  {
     "id": "lime",
     "name": "Lime",
-    "alternatives": [
+    "updated": "2022-09-11",
+    "options": [
       {
         "amount": "1 pc",
-        "price": 4.87,
+        "price": 5.20,
         "type": "Lime per kilo"
       }
     ],
     "contains": [
       {
         "id": "lime_peel",
-        "amount": "8 pc"
+        "name": "Lime peel",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       },
       {
         "id": "fresh_lime_juice",
-        "amount": "2 cl"
+        "name": "Fresh lime juice",
+        "updated": "2022-09-11",
+        "equals_to": "25 ml"
       },
       {
         "id": "lime_wedge",
-        "amount": "8 pc"
+        "name": "Lime wedge",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       },
       {
         "id": "lime_wheel",
-        "amount": "8 pc"
+        "name": "Lime wheel",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       }
     ]
   },
   {
-    "id": "lime_peel",
-    "name": "Lime peel",
-    "contained_in": "lime"
-  },
-  {
-    "id": "fresh_lime_juice",
-    "name": "Lime juice",
-    "contained_in": "lime"
-  },
-  {
-    "id": "lime_wedge",
-    "name": "Lime peel",
-    "contained_in": "lime"
-  },
-  {
-    "id": "lime_wheel",
-    "name": "Lime peel",
-    "contained_in": "lime"
-  },
-  {
     "id": "orange",
     "name": "Orange",
-    "alternatives": [
+    "updated": "2022-09-11",
+    "options": [
       {
         "amount": "1 pc",
-        "price": 12.57,
+        "price": 10.66,
         "type": "Orange per kilo"
       }
     ],
     "contains": [
       {
         "id": "orange_peel",
-        "amount": "8 pc"
+        "name": "Orange peel",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       },
       {
         "id": "fresh_orange_juice",
-        "amount": "4 cl"
+        "name": "Fresh orange juice",
+        "updated": "2022-09-09",
+        "equals_to": "4 cl"
       },
       {
         "id": "orange_wedge",
-        "amount": "8 pc"
+        "name": "Orange wedge",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       },
       {
         "id": "orange_wheel",
-        "amount": "8 pc"
+        "name": "Orange wheel",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       }
     ]
   },
   {
-    "id": "orange_peel",
-    "name": "Orange peel",
-    "contained_in": "orange"
-  },
-  {
-    "id": "fresh_orange_juice",
-    "name": "Orange juice",
-    "contained_in": "orange"
-  },
-  {
-    "id": "orange_wedge",
-    "name": "Orange wedge",
-    "contained_in": "orange"
-  },
-  {
-    "id": "orange_wheel",
-    "name": "Orange wheel",
-    "contained_in": "orange"
-  },
-  {
     "id": "grapefruit",
     "name": "Grapefruit",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 pc",
         "price": 16.90,
@@ -910,26 +929,35 @@
     "contains": [
       {
         "id": "grapefruit_peel",
-        "amount": "8 pc"
+        "name": "Grapefruit peel",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       },
       {
         "id": "fresh_grapefruit_juice",
-        "amount": "4 cl"
+        "name": "Fresh grapefruit juice",
+        "updated": "2022-09-09",
+        "equals_to": "4 cl"
       },
       {
         "id": "grapefruit_wedge",
-        "amount": "8 pc"
+        "name": "Grapefruit wedge",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       },
       {
         "id": "grapefruit_wheel",
-        "amount": "8 pc"
+        "name": "Grapefruit wheel",
+        "updated": "2022-09-09",
+        "equals_to": "8 pc"
       }
     ]
   },
   {
     "id": "pineapple",
     "name": "Pineapple",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 pc",
         "price": 33.90,
@@ -939,39 +967,17 @@
     "contains": [
       {
         "id": "pineapple_slice",
-        "amount": "20 pc"
+        "name": "Pineapple slice",
+        "updated": "2022-09-09",
+        "equals_to": "20 pc"
       }
     ]
   },
   {
-    "id": "pineapple_slice",
-    "name": "Pineapple slice",
-    "contained_in": "pineapple"
-  },
-  {
-    "id": "grapefruit_peel",
-    "name": "Grapefruit peel",
-    "contained_in": "grapefruit"
-  },
-  {
-    "id": "fresh_grapefruit_juice",
-    "name": "Grapefruit juice",
-    "contained_in": "grapefruit"
-  },
-  {
-    "id": "grapefruit_wedge",
-    "name": "Grapefruit wedge",
-    "contained_in": "grapefruit"
-  },
-  {
-    "id": "grapefruit_wheel",
-    "name": "Grapefruit wheel",
-    "contained_in": "grapefruit"
-  },
-  {
     "id": "peach",
     "name": "Peach",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 pc",
         "price": 8.90,
@@ -982,7 +988,8 @@
   {
     "id": "marachino_cherry",
     "name": "Marachino cherry",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "6 pc",
         "price": 34.90,
@@ -993,7 +1000,8 @@
   {
     "id": "fresh_mint",
     "name": "Fresh mint",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 pc",
         "price": 18.50,
@@ -1004,7 +1012,8 @@
   {
     "id": "fresh_thyme",
     "name": "Fresh thyme",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 pc",
         "price": 18.50,
@@ -1015,7 +1024,8 @@
   {
     "id": "cherry_tomatoes",
     "name": "Cherry tomatoes",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "12 pc",
         "price": 31.90,
@@ -1026,7 +1036,8 @@
   {
     "id": "worcester_sauce",
     "name": "Worcester sauce",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "150 ml",
         "price": 39.90,
@@ -1037,7 +1048,8 @@
   {
     "id": "tabasco",
     "name": "Tabasco",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "60 ml",
         "price": 52.90,
@@ -1048,7 +1060,8 @@
   {
     "id": "celery_stalk",
     "name": "Celery stalk",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "6 pc",
         "price": 33.90,
@@ -1059,7 +1072,8 @@
   {
     "id": "bacon",
     "name": "Bacon",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "6 pc",
         "price": 27.90,
@@ -1070,7 +1084,8 @@
   {
     "id": "egg_white",
     "name": "Egg white",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 l",
         "price": 99.00,
@@ -1081,7 +1096,8 @@
   {
     "id": "coconut_milk",
     "name": "Coconut milk",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "250 ml",
         "price": 22.90,
@@ -1092,7 +1108,8 @@
   {
     "id": "coconut_cream",
     "name": "Coconut cream",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "250 ml",
         "price": 26.90,
@@ -1103,7 +1120,8 @@
   {
     "id": "cream",
     "name": "Cream",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "3 dl",
         "price": 24.90,
@@ -1119,7 +1137,8 @@
   {
     "id": "orange_blossom_water",
     "name": "Orange Blossom Water",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "275 ml",
         "price": 91.00,
@@ -1130,7 +1149,8 @@
   {
     "id": "olive_green",
     "name": "Green Olive",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "20 pc",
         "price": 24.50,
@@ -1141,7 +1161,8 @@
   {
     "id": "honey_syrup",
     "name": "Honey syrup",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "7 dl",
         "price": 125.00,
@@ -1152,29 +1173,28 @@
   {
     "id": "demerara_sugar",
     "name": "Demerara sugar",
-    "alternatives": [
+    "updated": "2022-09-11",
+    "options": [
       {
         "amount": "500 g",
-        "price": 27.50,
+        "price": 29.50,
         "type": "Dan Sukker Rørsukker Demerara Strø 500g"
       }
     ],
     "contains": [
       {
         "id": "demerara_sugar_syrup",
-        "amount": "6.5 dl"
+        "name": "Demerara sugar syrup",
+        "updated": "2022-09-11",
+        "equals_to": "585 ml"
       }
     ]
   },
   {
-    "id": "demerara_sugar_syrup",
-    "name": "Demerara sugar syrup",
-    "contained_in": "demerara_sugar"
-  },
-  {
     "id": "sugar",
     "name": "Sugar",
-    "alternatives": [
+    "updated": "2022-09-11",
+    "options": [
       {
         "amount": "1 kg",
         "price": 25.90,
@@ -1184,19 +1204,17 @@
     "contains": [
       {
         "id": "sugar_syrup",
-        "amount": "11 dl"
+        "name": "Sugar syrup",
+        "updated": "2022-09-11",
+        "equals_to": "11.83 dl"
       }
     ]
   },
   {
-    "id": "sugar_syrup",
-    "name": "Sugar syrup",
-    "contained_in": "sugar"
-  },
-  {
     "id": "coffee_beans",
     "name": "Coffee beans",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "500 g",
         "price": 114.90,
@@ -1206,31 +1224,26 @@
     "contains": [
       {
         "id": "espresso",
-        "amount": "1.5 l"
+        "name": "Espresso",
+        "updated": "2022-09-09",
+        "equals_to": "1.5 l"
       },
       {
         "id": "coffee",
-        "amount": "8.33 l"
+        "name": "Coffee",
+        "updated": "2022-09-09",
+        "equals_to": "8.33 l"
       }
     ]
   },
   {
-    "id": "espresso",
-    "name": "Espresso",
-    "contained_in": "coffee_beans"
-  },
-  {
-    "id": "coffee",
-    "name": "Coffee",
-    "contained_in": "coffee_beans"
-  },
-  {
     "id": "flake_salt",
     "name": "Flake Salt",
-    "alternatives": [
+    "updated": "2022-09-11",
+    "options": [
       {
         "amount": "170 g",
-        "price": 23.50,
+        "price": 21.40,
         "type": "Coop Flaksalt 170g"
       }
     ]
@@ -1238,7 +1251,8 @@
   {
     "id": "salt",
     "name": "Salt",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "1 kg",
         "price": 11.50,
@@ -1248,19 +1262,17 @@
     "contains": [
       {
         "id": "saline",
-        "amount": "87.87 l"
+        "name": "Saline",
+        "updated": "2022-09-09",
+        "equals_to": "87.87 l"
       }
     ]
   },
   {
-    "id": "saline",
-    "name": "Saline",
-    "contained_in": "salt"
-  },
-  {
     "id": "pepper",
     "name": "Pepper",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "22 g",
         "price": 12.90,
@@ -1271,7 +1283,8 @@
   {
     "id": "soda_water",
     "name": "Soda water",
-    "alternatives": [
+    "updated": "2022-09-09",
+    "options": [
       {
         "amount": "60 l",
         "price": 259.90,
