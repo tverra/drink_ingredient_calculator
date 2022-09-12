@@ -8,3 +8,15 @@ extension DecimalFormatting on Decimal {
     return '${format.format(this)} kr';
   }
 }
+
+extension DoubleConversion on double {
+  Decimal toDecimal() {
+    return Decimal.parse(toStringAsFixed(10));
+  }
+}
+
+extension StringParsing on String {
+  Decimal toDecimal() {
+    return Decimal.parse(this);
+  }
+}
