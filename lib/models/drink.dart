@@ -1,22 +1,29 @@
 import 'dart:convert';
 
-import 'package:drink_calculator/amount.dart';
+import 'package:drink_calculator/models/amount.dart';
 
 class Drink {
+  final String id;
   final String name;
   final List<DrinkIngredient> ingredients;
 
-  Drink({required this.name, required this.ingredients});
+  Drink({required this.id, required this.name, required this.ingredients});
 
   factory Drink.fromMap(Map<String, dynamic> map) {
-    return Drink(
-      name: map['name'] as String,
-      ingredients: (map['ingredients'] as List<dynamic>)
-          .map(
-            (dynamic i) => DrinkIngredient.fromMap(i as Map<String, dynamic>),
-          )
-          .toList(),
-    );
+    try {
+      return Drink(
+        id: map['id'] as String,
+        name: map['name'] as String,
+        ingredients: (map['ingredients'] as List<dynamic>)
+            .map(
+              (dynamic i) => DrinkIngredient.fromMap(i as Map<String, dynamic>),
+        )
+            .toList(),
+      );
+    } catch (e) {
+      print(e);
+      throw Exception('Failed to parse map: $map\n');
+    }
   }
 
   static List<Drink> fromJson(String json) {
@@ -31,18 +38,23 @@ class Drink {
 }
 
 class DrinkIngredient {
-  final String name;
+  final String id;
   final Amount amount;
 
-  DrinkIngredient({required this.name, required this.amount});
+  DrinkIngredient({required this.id, required this.amount});
 
   factory DrinkIngredient.fromMap(Map<String, dynamic> map) {
-    return DrinkIngredient(
-      name: map['name'] as String,
-      amount: Amount.parse(map['amount'] as String),
-    );
+    try {
+      return DrinkIngredient(
+        id: map['id'] as String,
+        amount: Amount.parse(map['amount'] as String),
+      );
+    } catch (e) {
+      print(e);
+      throw Exception('Failed to parse map: $map\n');
+    }
   }
 
   @override
-  String toString() => name;
+  String toString() => id;
 }
