@@ -802,7 +802,7 @@ void main() {
       );
     });
 
-    test('throws error if one of the amounts are empty', () {
+    test('empty amounts are counted as zero', () {
       final List<Amount> amounts = <Amount>[
         Amount.fromInt(10, AmountType.pieces),
         Amount.empty(),
@@ -810,8 +810,8 @@ void main() {
       ];
 
       expect(
-        () => Amount.sumFromList(amounts),
-        throwsA(isA<ArgumentError>()),
+        Amount.sumFromList(amounts),
+        Amount.fromInt(20, AmountType.pieces),
       );
     });
 
@@ -1444,7 +1444,7 @@ void main() {
     });
   });
 
-  group('operators', () {
+  group('=', () {
     test('amounts are equal if amount and type are the same', () {
       final Amount amount = Amount.fromInt(40, AmountType.volume);
 
@@ -1462,8 +1462,12 @@ void main() {
       expect(zero == Amount.fromInt(0, AmountType.volume), true);
       expect(empty == Amount.fromInt(0, AmountType.weight), false);
       expect(empty == Amount.fromInt(0, AmountType.none), true);
+      expect(empty == empty, true);
+      expect(zero == zero, true);
     });
+  });
 
+  group('<', () {
     test('amount is smaller if amount is smaller', () {
       final Amount amount = Amount.fromInt(40, AmountType.volume);
 
@@ -1472,7 +1476,7 @@ void main() {
       expect(amount < Amount.fromInt(41, AmountType.volume), true);
     });
 
-    test('comparing smaller than on different types throws error', () {
+    test('comparing on different types throws error', () {
       final Amount volume = Amount.fromInt(40, AmountType.volume);
       final Amount weight = Amount.fromInt(40, AmountType.weight);
 
@@ -1482,6 +1486,20 @@ void main() {
       );
     });
 
+    test('empty amount is treated as zero', () {
+      final Amount empty = Amount.empty();
+
+      expect(Amount.fromInt(1, AmountType.volume) < empty, false);
+      expect(empty < Amount.fromInt(1, AmountType.volume), true);
+      expect(Amount.fromInt(-1, AmountType.volume) < empty, true);
+      expect(empty < Amount.fromInt(-1, AmountType.volume), false);
+      expect(Amount.fromInt(0, AmountType.volume) < empty, false);
+      expect(empty < Amount.fromInt(0, AmountType.volume), false);
+      expect(empty < empty, false);
+    });
+  });
+
+  group('<=', () {
     test('amount is smaller or equal if amount is smaller or equal', () {
       final Amount amount = Amount.fromInt(40, AmountType.volume);
 
@@ -1490,7 +1508,7 @@ void main() {
       expect(amount <= Amount.fromInt(41, AmountType.volume), true);
     });
 
-    test('comparing smaller than on different types throws error', () {
+    test('comparing different types throws error', () {
       final Amount volume = Amount.fromInt(40, AmountType.volume);
       final Amount weight = Amount.fromInt(40, AmountType.weight);
 
@@ -1500,6 +1518,20 @@ void main() {
       );
     });
 
+    test('empty amount is treated as zero', () {
+      final Amount empty = Amount.empty();
+
+      expect(Amount.fromInt(1, AmountType.volume) <= empty, false);
+      expect(empty <= Amount.fromInt(1, AmountType.volume), true);
+      expect(Amount.fromInt(-1, AmountType.volume) <= empty, true);
+      expect(empty <= Amount.fromInt(-1, AmountType.volume), false);
+      expect(Amount.fromInt(0, AmountType.volume) <= empty, true);
+      expect(empty <= Amount.fromInt(0, AmountType.volume), true);
+      expect(empty <= empty, true);
+    });
+  });
+
+  group('>', () {
     test('amount is bigger if amount is bigger', () {
       final Amount amount = Amount.fromInt(40, AmountType.volume);
 
@@ -1508,7 +1540,7 @@ void main() {
       expect(amount > Amount.fromInt(41, AmountType.volume), false);
     });
 
-    test('comparing bigger than on different types throws error', () {
+    test('comparing different types throws error', () {
       final Amount volume = Amount.fromInt(40, AmountType.volume);
       final Amount weight = Amount.fromInt(40, AmountType.weight);
 
@@ -1518,24 +1550,52 @@ void main() {
       );
     });
 
-    test('amount is bigger or equal if amount is bigger or equal', () {
+    test('empty amount is treated as zero', () {
+      final Amount empty = Amount.empty();
+
+      expect(Amount.fromInt(1, AmountType.volume) > empty, true);
+      expect(empty > Amount.fromInt(1, AmountType.volume), false);
+      expect(Amount.fromInt(-1, AmountType.volume) > empty, false);
+      expect(empty > Amount.fromInt(-1, AmountType.volume), true);
+      expect(Amount.fromInt(0, AmountType.volume) > empty, false);
+      expect(empty > Amount.fromInt(0, AmountType.volume), false);
+      expect(empty > empty, false);
+    });
+  });
+
+  group('>=', () {
+    test('amount is bigger if amount is bigger', () {
       final Amount amount = Amount.fromInt(40, AmountType.volume);
 
-      expect(amount >= Amount.fromInt(39, AmountType.volume), true);
-      expect(amount >= Amount.fromInt(40, AmountType.volume), true);
-      expect(amount >= Amount.fromInt(41, AmountType.volume), false);
+      expect(amount > Amount.fromInt(39, AmountType.volume), true);
+      expect(amount > Amount.fromInt(40, AmountType.volume), false);
+      expect(amount > Amount.fromInt(41, AmountType.volume), false);
     });
 
-    test('comparing smaller than on different types throws error', () {
+    test('comparing different types throws error', () {
       final Amount volume = Amount.fromInt(40, AmountType.volume);
       final Amount weight = Amount.fromInt(40, AmountType.weight);
 
       expect(
-        () => volume >= weight,
+        () => volume > weight,
         throwsA(isA<ArgumentError>()),
       );
     });
 
+    test('empty amount is treated as zero', () {
+      final Amount empty = Amount.empty();
+
+      expect(Amount.fromInt(1, AmountType.volume) >= empty, true);
+      expect(empty >= Amount.fromInt(1, AmountType.volume), false);
+      expect(Amount.fromInt(-1, AmountType.volume) >= empty, false);
+      expect(empty >= Amount.fromInt(-1, AmountType.volume), true);
+      expect(Amount.fromInt(0, AmountType.volume) >= empty, true);
+      expect(empty >= Amount.fromInt(0, AmountType.volume), true);
+      expect(empty >= empty, true);
+    });
+  });
+
+  group('+', () {
     test('amounts are added', () {
       final Amount amount1 = Amount.fromInt(40, AmountType.volume);
       final Amount amount2 = Amount.fromInt(20, AmountType.volume);
@@ -1553,6 +1613,39 @@ void main() {
       );
     });
 
+    test('empty amount is treated as zero', () {
+      final Amount empty = Amount.empty();
+      final Amount volume = Amount.fromInt(1, AmountType.volume);
+
+      expect(volume + empty, volume);
+      expect(empty + volume, volume);
+      expect(empty + empty, empty);
+    });
+  });
+
+  group('unary-', () {
+    test('amount is inverted', () {
+      final Amount positive = Amount.volume(ml: 10.toDecimal());
+      final Amount negative = Amount.volume(ml: -10.toDecimal());
+
+      expect(-positive.amount, -10.toDecimal());
+      expect(-negative.amount, 10.toDecimal());
+    });
+
+    test('zero is unchanged', () {
+      final Amount amount = Amount.volume(ml: 0.toDecimal());
+
+      expect(-amount, amount);
+    });
+
+    test('empty amount is unchanged', () {
+      final Amount amount = Amount.empty();
+
+      expect(-amount, amount);
+    });
+  });
+
+  group('-', () {
     test('amounts are subtracted', () {
       final Amount amount1 = Amount.fromInt(40, AmountType.volume);
       final Amount amount2 = Amount.fromInt(20, AmountType.volume);
@@ -1570,6 +1663,17 @@ void main() {
       );
     });
 
+    test('empty amount is treated as zero', () {
+      final Amount empty = Amount.empty();
+      final Amount volume = Amount.fromInt(1, AmountType.volume);
+
+      expect(volume - empty, volume);
+      expect(empty - volume, -volume);
+      expect(empty - empty, empty);
+    });
+  });
+
+  group('*', () {
     test('amounts are multiplied', () {
       final Amount amount1 = Amount.fromInt(40, AmountType.volume);
       final Amount amount2 = Amount.fromInt(20, AmountType.volume);
@@ -1587,6 +1691,17 @@ void main() {
       );
     });
 
+    test('empty amount is treated as zero', () {
+      final Amount empty = Amount.empty();
+      final Amount volume = Amount.fromInt(1, AmountType.volume);
+
+      expect(empty * volume, Amount.volume());
+      expect(volume * empty, Amount.volume());
+      expect(empty * empty, empty);
+    });
+  });
+
+  group('/', () {
     test('amounts are divided', () {
       final Amount amount1 = Amount.fromInt(40, AmountType.volume);
       final Amount amount2 = Amount.fromInt(20, AmountType.volume);
@@ -1600,6 +1715,32 @@ void main() {
 
       expect(
         () => volume / weight,
+        throwsA(isA<ArgumentError>()),
+      );
+    });
+
+    test('dividing by zero throws error', () {
+      final Amount volume = Amount.fromInt(40, AmountType.volume);
+      final Amount zero = Amount.fromInt(0, AmountType.volume);
+
+      expect(
+        () => volume / zero,
+        throwsA(isA<ArgumentError>()),
+      );
+    });
+
+    test('empty amount is treated as zero', () {
+      final Amount empty = Amount.empty();
+      final Amount volume = Amount.fromInt(1, AmountType.volume);
+
+      expect(empty / volume, Amount.volume());
+
+      expect(
+        () => volume / empty,
+        throwsA(isA<ArgumentError>()),
+      );
+      expect(
+        () => empty / empty,
         throwsA(isA<ArgumentError>()),
       );
     });

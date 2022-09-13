@@ -247,61 +247,125 @@ class Amount {
   int get hashCode => amount.hashCode ^ type.hashCode;
 
   bool operator <(Object other) {
-    if (other is! Amount || type != other.type) {
+    if (other is! Amount || !_isSameType(other)) {
       throw ArgumentError("Different types can't be compared");
     }
-    return amount < other.amount;
+
+    if (isEmpty) {
+      return other.amount > Decimal.zero;
+    } else if (other.isEmpty) {
+      return amount < Decimal.zero;
+    } else {
+      return amount < other.amount;
+    }
   }
 
   bool operator <=(Object other) {
-    if (other is! Amount || type != other.type) {
+    if (other is! Amount || !_isSameType(other)) {
       throw ArgumentError("Different types can't be compared");
     }
-    return amount <= other.amount;
+
+    if (isEmpty) {
+      return other.amount >= Decimal.zero;
+    } else if (other.isEmpty) {
+      return amount <= Decimal.zero;
+    } else {
+      return amount <= other.amount;
+    }
   }
 
   bool operator >(Object other) {
-    if (other is! Amount || type != other.type) {
+    if (other is! Amount || !_isSameType(other)) {
       throw ArgumentError("Different types can't be compared");
     }
-    return amount > other.amount;
+
+    if (isEmpty) {
+      return other.amount < Decimal.zero;
+    } else if (other.isEmpty) {
+      return amount > Decimal.zero;
+    } else {
+      return amount > other.amount;
+    }
   }
 
   bool operator >=(Object other) {
-    if (other is! Amount || type != other.type) {
+    if (other is! Amount || !_isSameType(other)) {
       throw ArgumentError("Different types can't be compared");
     }
-    return amount >= other.amount;
+
+    if (isEmpty) {
+      return other.amount <= Decimal.zero;
+    } else if (other.isEmpty) {
+      return amount >= Decimal.zero;
+    } else {
+      return amount >= other.amount;
+    }
   }
 
   Amount operator +(Amount other) {
-    if (type != other.type) {
+    if (!_isSameType(other)) {
       throw ArgumentError("Different types can't be added together");
     }
-    return copyWith(amount: amount + other.amount);
+
+    if (isEmpty) {
+      return other;
+    } else if (other.isEmpty) {
+      return this;
+    } else {
+      return copyWith(amount: amount + other.amount);
+    }
+  }
+
+  Amount operator -() {
+    return copyWith(amount: -amount);
   }
 
   Amount operator -(Amount other) {
-    if (type != other.type) {
+    if (!_isSameType(other)) {
       throw ArgumentError("Different types can't be added together");
     }
-    return copyWith(amount: amount - other.amount);
+
+    if (isEmpty) {
+      return -other;
+    } else if (other.isEmpty) {
+      return this;
+    } else {
+      return copyWith(amount: amount - other.amount);
+    }
   }
 
   Amount operator *(Amount other) {
-    if (type != other.type) {
+    if (!_isSameType(other)) {
       throw ArgumentError("Different types can't be multiplied by each other");
     }
-    return copyWith(amount: amount * other.amount);
+
+    if (isEmpty) {
+      return other.copyWith(amount: 0.toDecimal());
+    } else if (other.isEmpty) {
+      return copyWith(amount: 0.toDecimal());
+    } else {
+      return copyWith(amount: amount * other.amount);
+    }
   }
 
   Amount operator /(Amount other) {
-    if (type != other.type) {
+    if (!_isSameType(other)) {
       throw ArgumentError(
         "Different types can't be divided by each other",
       );
     }
-    return copyWith(amount: (amount / other.amount).toDecimal());
+
+    if (other.isEmpty) {
+      throw ArgumentError('zero can not be used as denominator');
+    } else if (isEmpty) {
+      return other.copyWith(amount: 0.toDecimal());
+    } else {
+      return copyWith(amount: (amount / other.amount).toDecimal());
+    }
+  }
+
+  bool _isSameType(Amount other) {
+    return type == other.type || isEmpty || other.isEmpty;
   }
 
   @override
