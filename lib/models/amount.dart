@@ -230,6 +230,17 @@ class Amount {
     return amount;
   }
 
+  Amount convert(Amount reference, Amount amount) {
+    if (reference.isEmpty) {
+      return copyWith(amount: 0.toDecimal());
+    }
+
+    final Decimal decimal =
+        (amount.amount / reference.amount).toDecimal() * this.amount;
+
+    return copyWith(amount: decimal);
+  }
+
   Amount multiply(int multiplier) {
     return copyWith(amount: amount * Decimal.fromInt(multiplier));
   }
@@ -247,7 +258,7 @@ class Amount {
   int get hashCode => amount.hashCode ^ type.hashCode;
 
   bool operator <(Object other) {
-    if (other is! Amount || !_isSameType(other)) {
+    if (other is! Amount || !isSameTypeAs(other)) {
       throw ArgumentError("Different types can't be compared");
     }
 
@@ -261,7 +272,7 @@ class Amount {
   }
 
   bool operator <=(Object other) {
-    if (other is! Amount || !_isSameType(other)) {
+    if (other is! Amount || !isSameTypeAs(other)) {
       throw ArgumentError("Different types can't be compared");
     }
 
@@ -275,7 +286,7 @@ class Amount {
   }
 
   bool operator >(Object other) {
-    if (other is! Amount || !_isSameType(other)) {
+    if (other is! Amount || !isSameTypeAs(other)) {
       throw ArgumentError("Different types can't be compared");
     }
 
@@ -289,7 +300,7 @@ class Amount {
   }
 
   bool operator >=(Object other) {
-    if (other is! Amount || !_isSameType(other)) {
+    if (other is! Amount || !isSameTypeAs(other)) {
       throw ArgumentError("Different types can't be compared");
     }
 
@@ -303,7 +314,7 @@ class Amount {
   }
 
   Amount operator +(Amount other) {
-    if (!_isSameType(other)) {
+    if (!isSameTypeAs(other)) {
       throw ArgumentError("Different types can't be added together");
     }
 
@@ -321,7 +332,7 @@ class Amount {
   }
 
   Amount operator -(Amount other) {
-    if (!_isSameType(other)) {
+    if (!isSameTypeAs(other)) {
       throw ArgumentError("Different types can't be added together");
     }
 
@@ -335,7 +346,7 @@ class Amount {
   }
 
   Amount operator *(Amount other) {
-    if (!_isSameType(other)) {
+    if (!isSameTypeAs(other)) {
       throw ArgumentError("Different types can't be multiplied by each other");
     }
 
@@ -349,7 +360,7 @@ class Amount {
   }
 
   Amount operator /(Amount other) {
-    if (!_isSameType(other)) {
+    if (!isSameTypeAs(other)) {
       throw ArgumentError(
         "Different types can't be divided by each other",
       );
@@ -364,7 +375,7 @@ class Amount {
     }
   }
 
-  bool _isSameType(Amount other) {
+  bool isSameTypeAs(Amount other) {
     return type == other.type || isEmpty || other.isEmpty;
   }
 

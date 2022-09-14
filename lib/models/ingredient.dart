@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:decimal/decimal.dart';
 import 'package:drink_calculator/models/amount.dart';
+import 'package:drink_calculator/models/drink.dart';
 
 class Ingredient {
   final String id;
@@ -45,6 +46,43 @@ class Ingredient {
     }
   }
 
+  Amount convertFrom(DrinkIngredient ingredient) {
+    final List<IngredientOption>? options = this.options;
+
+    if (options == null || options.isEmpty) {
+      throw ArgumentError('This ingredient has no options for conversion');
+    }
+
+    final IngredientOption option = options.first;
+
+    if (ingredient.id == id) {
+      return ingredient.amount;
+    }
+
+    final List<Ingredient>? contains = this.contains;
+
+    if (contains == null || contains.isEmpty) {
+      throw ArgumentError('This ingredient has no options for conversion');
+    }
+
+    final List<Ingredient> referencesMatch =
+        contains.where((Ingredient i) => i.id == ingredient.id).toList();
+
+    if (referencesMatch.length > 1) {
+      throw ArgumentError('Multiple candidates for conversion found');
+    } else if (referencesMatch.isEmpty) {
+      throw ArgumentError('This ingredient has no options for conversion');
+    }
+
+    final Amount? reference = referencesMatch.single.equalsTo;
+
+    if (reference == null) {
+      throw ArgumentError('This ingredient has no options for conversion');
+    }
+
+    return option.amount.convert(reference, ingredient.amount);
+  }
+
   static List<Ingredient> fromJson(String json) {
     final List<dynamic> parsed = jsonDecode(json) as List<dynamic>;
     return parsed
@@ -53,7 +91,7 @@ class Ingredient {
   }
 
   static Ingredient singleMatch(String id, List<Ingredient> list) {
-    final List<Ingredient> matches = _matchOnId(id, list);
+    final List<Ingredient> matches = matchOnId(id, list);
 
     if (matches.isEmpty) {
       throw ArgumentError('The following ingredient is missing: $id');
@@ -64,14 +102,14 @@ class Ingredient {
     return matches.single;
   }
 
-  static List<Ingredient> _matchOnId(String id, List<Ingredient> list) {
+  static List<Ingredient> matchOnId(String id, List<Ingredient> list) {
     final List<Ingredient> matches = <Ingredient>[];
 
     for (final Ingredient ingredient in list) {
       final List<Ingredient>? contains = ingredient.contains;
 
       if (ingredient.id == id ||
-          (contains != null && _matchOnId(id, contains).isNotEmpty)) {
+          (contains != null && matchOnId(id, contains).isNotEmpty)) {
         matches.add(ingredient);
       }
     }

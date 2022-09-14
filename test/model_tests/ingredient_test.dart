@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:decimal/decimal.dart';
 import 'package:drink_calculator/extensions.dart';
 import 'package:drink_calculator/models/amount.dart';
+import 'package:drink_calculator/models/drink.dart';
 import 'package:drink_calculator/models/ingredient.dart';
 import 'package:test/test.dart';
 
@@ -91,6 +92,72 @@ void main() {
           Amount.parse(subItemMap['equals_to'] as String),
         );
       }
+    });
+  });
+
+  group('convertFrom', () {
+    final Ingredient lemon = Ingredient(
+      id: 'lemon',
+      name: 'Lemon',
+      updated: DateTime.now(),
+      options: <IngredientOption>[
+        IngredientOption(
+          amount: Amount.pieces(pc: 1.toDecimal()),
+          price: 10.toDecimal(),
+          type: 'Lemon per piece',
+        ),
+      ],
+      contains: <Ingredient>[
+        Ingredient(
+          id: 'fresh_lemon_juice',
+          name: 'Fresh lemon juice',
+          updated: DateTime.now(),
+          equalsTo: Amount.volume(cl: 4.toDecimal()),
+        ),
+        Ingredient(
+          id: 'lemon_wedge',
+          name: 'Lemon wedge',
+          updated: DateTime.now(),
+          equalsTo: Amount.pieces(pc: 8.toDecimal()),
+        ),
+        Ingredient(
+          id: 'lemon_counterweight',
+          name: 'Lemon counterweight',
+          updated: DateTime.now(),
+          equalsTo: Amount.weight(g: 400.toDecimal()),
+        ),
+      ],
+    );
+
+    test('ingredient is converted from volume', () {
+      final DrinkIngredient ingredient = DrinkIngredient(
+        id: 'fresh_lemon_juice',
+        amount: Amount.volume(cl: 2.toDecimal()),
+      );
+      final Amount converted = lemon.convertFrom(ingredient);
+
+      expect(converted, Amount.pieces(pc: 0.5.toDecimal()));
+    });
+
+    test('ingredient is converted from pieces', () {
+      final DrinkIngredient ingredient = DrinkIngredient(
+        id: 'lemon_wedge',
+        amount: Amount.pieces(pc: 4.toDecimal()),
+      );
+      final Amount converted = lemon.convertFrom(ingredient);
+
+      expect(converted, Amount.pieces(pc: 0.5.toDecimal()));
+    });
+
+    test('ingredient is converted from weight', () {
+      final DrinkIngredient ingredient = DrinkIngredient(
+        id: 'lemon_counterweight',
+        amount: Amount.weight(g: 200.toDecimal()),
+      );
+      final Amount converted =
+          lemon.convertFrom(ingredient);
+
+      expect(converted, Amount.pieces(pc: 0.5.toDecimal()));
     });
   });
 

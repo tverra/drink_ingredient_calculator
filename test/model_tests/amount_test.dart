@@ -1347,6 +1347,168 @@ void main() {
     });
   });
 
+  group('convert', () {
+    test('volume is converted to volume', () {
+      final Amount volume = Amount.volume(dl: 1.toDecimal());
+      final Amount reference = Amount.volume(dl: 4.toDecimal());
+      final Amount amount = Amount.volume(dl: 2.toDecimal());
+
+      final Amount converted = volume.convert(reference, amount);
+
+      expect(converted, Amount.volume(cl: 5.toDecimal()));
+    });
+
+    test('weight is converted to volume', () {
+      final Amount volume = Amount.volume(dl: 1.toDecimal());
+      final Amount reference = Amount.weight(g: 400.toDecimal());
+      final Amount amount = Amount.weight(g: 200.toDecimal());
+
+      final Amount converted = volume.convert(reference, amount);
+
+      expect(converted, Amount.volume(cl: 5.toDecimal()));
+    });
+
+    test('pieces is converted to volume', () {
+      final Amount volume = Amount.volume(dl: 1.toDecimal());
+      final Amount reference = Amount.pieces(pc: 4.toDecimal());
+      final Amount amount = Amount.pieces(pc: 2.toDecimal());
+
+      final Amount converted = volume.convert(reference, amount);
+
+      expect(converted, Amount.volume(cl: 5.toDecimal()));
+    });
+
+    test('nothing is converted to volume', () {
+      final Amount volume = Amount.volume(dl: 1.toDecimal());
+      final Amount reference = Amount.empty();
+      final Amount amount = Amount.empty();
+
+      final Amount converted = volume.convert(reference, amount);
+
+      expect(converted, Amount.zero(AmountType.volume));
+    });
+
+    test('volume is converted to weight', () {
+      final Amount weight = Amount.weight(g: 100.toDecimal());
+      final Amount reference = Amount.volume(dl: 4.toDecimal());
+      final Amount amount = Amount.volume(dl: 2.toDecimal());
+
+      final Amount converted = weight.convert(reference, amount);
+
+      expect(converted, Amount.weight(g: 50.toDecimal()));
+    });
+
+    test('weight is converted to weight', () {
+      final Amount weight = Amount.weight(g: 100.toDecimal());
+      final Amount reference = Amount.weight(g: 400.toDecimal());
+      final Amount amount = Amount.weight(g: 200.toDecimal());
+
+      final Amount converted = weight.convert(reference, amount);
+
+      expect(converted, Amount.weight(g: 50.toDecimal()));
+    });
+
+    test('pieces is converted to weight', () {
+      final Amount weight = Amount.weight(g: 100.toDecimal());
+      final Amount reference = Amount.pieces(pc: 4.toDecimal());
+      final Amount amount = Amount.pieces(pc: 2.toDecimal());
+
+      final Amount converted = weight.convert(reference, amount);
+
+      expect(converted, Amount.weight(g: 50.toDecimal()));
+    });
+
+    test('nothing is converted to weight', () {
+      final Amount weight = Amount.weight(g: 100.toDecimal());
+      final Amount reference = Amount.empty();
+      final Amount amount = Amount.empty();
+
+      final Amount converted = weight.convert(reference, amount);
+
+      expect(converted, Amount.zero(AmountType.weight));
+    });
+
+    test('volume is converted to pieces', () {
+      final Amount pieces = Amount.pieces(pc: 1.toDecimal());
+      final Amount reference = Amount.volume(dl: 4.toDecimal());
+      final Amount amount = Amount.volume(dl: 2.toDecimal());
+
+      final Amount converted = pieces.convert(reference, amount);
+
+      expect(converted, Amount.pieces(pc: 0.5.toDecimal()));
+    });
+
+    test('weight is converted to pieces', () {
+      final Amount pieces = Amount.pieces(pc: 1.toDecimal());
+      final Amount reference = Amount.weight(g: 400.toDecimal());
+      final Amount amount = Amount.weight(g: 200.toDecimal());
+
+      final Amount converted = pieces.convert(reference, amount);
+
+      expect(converted, Amount.pieces(pc: 0.5.toDecimal()));
+    });
+
+    test('pieces is converted to pieces', () {
+      final Amount pieces = Amount.pieces(pc: 1.toDecimal());
+      final Amount reference = Amount.pieces(pc: 4.toDecimal());
+      final Amount amount = Amount.pieces(pc: 2.toDecimal());
+
+      final Amount converted = pieces.convert(reference, amount);
+
+      expect(converted, Amount.pieces(pc: 0.5.toDecimal()));
+    });
+
+    test('nothing is converted to pieces', () {
+      final Amount pieces = Amount.pieces(pc: 1.toDecimal());
+      final Amount reference = Amount.empty();
+      final Amount amount = Amount.empty();
+
+      final Amount converted = pieces.convert(reference, amount);
+
+      expect(converted, Amount.zero(AmountType.pieces));
+    });
+
+    test('volume is converted to nothing', () {
+      final Amount nothing = Amount.empty();
+      final Amount reference = Amount.volume(dl: 4.toDecimal());
+      final Amount amount = Amount.volume(dl: 2.toDecimal());
+
+      final Amount converted = nothing.convert(reference, amount);
+
+      expect(converted, Amount.empty());
+    });
+
+    test('weight is converted to nothing', () {
+      final Amount nothing = Amount.empty();
+      final Amount reference = Amount.weight(g: 400.toDecimal());
+      final Amount amount = Amount.weight(g: 200.toDecimal());
+
+      final Amount converted = nothing.convert(reference, amount);
+
+      expect(converted, Amount.empty());
+    });
+
+    test('pieces is converted to nothing', () {
+      final Amount nothing = Amount.empty();
+      final Amount reference = Amount.pieces(pc: 4.toDecimal());
+      final Amount amount = Amount.pieces(pc: 2.toDecimal());
+
+      final Amount converted = nothing.convert(reference, amount);
+
+      expect(converted, Amount.empty());
+    });
+
+    test('nothing is converted to nothing', () {
+      final Amount nothing = Amount.empty();
+      final Amount reference = Amount.empty();
+      final Amount amount = Amount.empty();
+
+      final Amount converted = nothing.convert(reference, amount);
+
+      expect(converted, Amount.empty());
+    });
+  });
+
   group('modifiers', () {
     test('volume integer is multiplied', () {
       final Amount amount = Amount.fromInt(10, AmountType.volume);
