@@ -25,7 +25,13 @@ String introMessage(String version) {
 }
 
 class ListCommand extends Command<void> {
-  ListCommand();
+  ListCommand() {
+    argParser.addOption(
+      fileNameOption,
+      abbr: 'f',
+      help: 'The name of the config',
+    );
+  }
 
   @override
   String get name => 'list';
@@ -47,11 +53,17 @@ class ListCommand extends Command<void> {
 
 class CalculateCommand extends Command<void> {
   CalculateCommand() {
-    argParser.addOption(
-      numberOfDrinksOption,
-      abbr: 'n',
-      help: 'The expected number of each drink',
-    );
+    argParser
+      ..addOption(
+        numberOfDrinksOption,
+        abbr: 'n',
+        help: 'The expected number of each drink',
+      )
+      ..addOption(
+        fileNameOption,
+        abbr: 'f',
+        help: 'The name of the config',
+      );
   }
 
   @override

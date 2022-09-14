@@ -1,13 +1,13 @@
-import 'dart:io';
-
 import 'package:args/args.dart';
+import 'package:drink_calculator/constants.dart' as constants;
 import 'package:drink_calculator/models/drink.dart';
+import 'package:drink_calculator/utils.dart';
 
-void listDrinks(ArgResults results) {
-  final List<Drink> drinks =
-      Drink.fromJson(File('drinks.json').readAsStringSync());
+void listDrinks(ArgResults args) {
+  final String fileName = args[constants.fileNameOption] as String;
+  final List<Drink> drinks = readDrinks(fileName);
 
-  for (final Drink drink in drinks) {
-    print(drink.name);
+  for (int i = 0; i < drinks.length; i++) {
+    print('${i + 1}:\t ${drinks[i].name}');
   }
 }
