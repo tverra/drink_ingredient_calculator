@@ -154,8 +154,7 @@ void main() {
         id: 'lemon_counterweight',
         amount: Amount.weight(g: 200.toDecimal()),
       );
-      final Amount converted =
-          lemon.convertFrom(ingredient);
+      final Amount converted = lemon.convertFrom(ingredient);
 
       expect(converted, Amount.pieces(pc: 0.5.toDecimal()));
     });

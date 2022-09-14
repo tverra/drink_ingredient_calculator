@@ -19,15 +19,16 @@ void calculateCost(ArgResults args) {
     ..addDrinkList(drinks)
     ..multiply(numberOfDrinks);
 
-  final List<SelectedAlternatives> bestAlternatives = ingredientAmounts.getBestOptions();
-
+  final List<SelectedAlternatives> bestAlternatives =
+      ingredientAmounts.getBestOptions();
 
   for (final SelectedAlternatives item in bestAlternatives) {
     final Decimal purchaseSum = item.sumPrice;
     totalSum += purchaseSum;
 
     print('${item.ingredient.name}: ${item.requiredAmount.toString()}');
-    print('purchase amount: ${IngredientOption.sumAmount(item.options).toString()}');
+    print(
+        'purchase amount: ${IngredientOption.sumAmount(item.options).toString()}');
     print('price: ${purchaseSum.formatPrice()}');
     print('');
   }

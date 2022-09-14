@@ -36,6 +36,6 @@ List<Ingredient> readIngredients() {
 
 int getNumberOfDrinks(ArgResults args) {
   final String? numberOfDrinksOption =
-  args[constants.numberOfDrinksOption] as String?;
+      args[constants.numberOfDrinksOption] as String?;
   return int.tryParse(numberOfDrinksOption ?? '') ?? 1;
 }

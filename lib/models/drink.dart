@@ -17,7 +17,7 @@ class Drink {
         ingredients: (map['ingredients'] as List<dynamic>)
             .map(
               (dynamic i) => DrinkIngredient.fromMap(i as Map<String, dynamic>),
-        )
+            )
             .toList(),
       );
     } catch (e) {
