@@ -72,6 +72,14 @@ class IngredientAmounts {
     return selectedAlternatives;
   }
 
+  Decimal getTotalSum() {
+    return getBestOptions().fold(
+      Decimal.zero,
+      (Decimal previous, SelectedAlternatives current) =>
+          previous + current.sumPrice,
+    );
+  }
+
   List<IngredientOption> _selectAlternativesForIngredient(
     _IngredientAmountItem ingredientAmount,
   ) {
@@ -112,28 +120,6 @@ class IngredientAmounts {
       return matches.single;
     }
   }
-
-/*  _IngredientAmountItem? _singleMatch(String id) {
-    final List<_IngredientAmountItem> matches = <_IngredientAmountItem>[];
-
-    for (final _IngredientAmountItem item in _ingredientAmounts) {
-      final Ingredient ingredient = item.ingredient;
-      final List<Ingredient>? contains = ingredient.contains;
-
-      if (ingredient.id == id ||
-          (contains != null && Ingredient.matchOnId(id, contains).isNotEmpty)) {
-        matches.add(item);
-      }
-    }
-
-    if (matches.isEmpty) {
-      return null;
-    } else if (matches.length > 1) {
-      throw ArgumentError('Duplicate ingredient: $id');
-    } else {
-      return matches.single;
-    }
-  }*/
 }
 
 class SelectedAlternatives {
@@ -157,6 +143,12 @@ class SelectedAlternatives {
       (Decimal previous, IngredientOption current) => previous + current.price,
     );
   }
+
+  Decimal get pricePerAmount => (sumPrice / sumAmount.amount).toDecimal();
+
+  Decimal get unusedValue => requiredAmountDifference.amount * pricePerAmount;
+
+  Amount get requiredAmountDifference => sumAmount - requiredAmount;
 
   Amount get sumAmount {
     if (_options.isEmpty) {

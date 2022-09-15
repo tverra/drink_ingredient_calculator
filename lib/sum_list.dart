@@ -23,14 +23,12 @@ void calculateCost(ArgResults args) {
 
   for (final SelectedAlternatives item in bestAlternatives) {
     final Decimal purchaseSum = item.sumPrice;
-    totalSum += purchaseSum;
 
-    print('${item.ingredient.name}: ${item.requiredAmount.toString()}');
-    print(
-        'purchase amount: ${IngredientOption.sumAmount(item.options).toString()}');
+    print('${item.ingredient.name}: ${item.requiredAmount}');
+    print('purchase amount: ${IngredientOption.sumAmount(item.options)}');
     print('price: ${purchaseSum.formatPrice()}');
     print('');
   }
 
-  print('Total: ${totalSum.formatPrice()}');
+  print('Total: ${ingredientAmounts.getTotalSum().formatPrice()}');
 }
