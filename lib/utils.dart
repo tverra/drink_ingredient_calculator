@@ -1,8 +1,8 @@
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:args/args.dart';
 import 'package:drink_calculator/constants.dart' as constants;
+import 'package:drink_calculator/models/config.dart';
 import 'package:drink_calculator/models/drink.dart';
 import 'package:drink_calculator/models/ingredient.dart';
 
@@ -15,23 +15,20 @@ String generateString(String pattern, int repetitions) {
   return buffer.toString();
 }
 
-List<Drink> readDrinks(String name) {
-  final List<Drink> drinks =
-      Drink.fromJson(File('drinks.json').readAsStringSync());
-
-  final Map<String, dynamic> config =
-      jsonDecode(File('collections/$name.json').readAsStringSync())
-          as Map<String, dynamic>;
-
-  final List<String> included = (config['included'] as List<dynamic>)
-      .map((dynamic e) => e as String)
-      .toList();
-
-  return drinks.where((Drink d) => included.contains(d.id)).toList();
+List<Drink> readDrinks() {
+  return Drink.fromJson(File('drinks.json').readAsStringSync());
 }
 
 List<Ingredient> readIngredients() {
   return Ingredient.fromJson(File('ingredients.json').readAsStringSync());
+}
+
+Config readConfig(String name) {
+  return Config.fromJson(
+    File('collections/$name.json').readAsStringSync(),
+    readDrinks(),
+    readIngredients(),
+  );
 }
 
 int getNumberOfDrinks(ArgResults args) {

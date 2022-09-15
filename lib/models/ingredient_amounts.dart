@@ -5,14 +5,25 @@ import 'package:drink_calculator/models/ingredient.dart';
 
 class IngredientAmounts {
   final List<Ingredient> _ingredients;
+  final List<Ingredient> _excluded;
   final List<_IngredientAmountItem> _ingredientAmounts =
       <_IngredientAmountItem>[];
 
-  IngredientAmounts(List<Ingredient> ingredients) : _ingredients = ingredients;
+  IngredientAmounts(
+    List<Ingredient> ingredients, [
+    List<Ingredient> excluded = const <Ingredient>[],
+  ])  : _ingredients = ingredients,
+        _excluded = excluded;
 
   void addDrinkList(List<Drink> drinks) {
     for (final Drink drink in drinks) {
       for (final DrinkIngredient ingredient in drink.ingredients) {
+        if (_excluded
+            .where((Ingredient i) => i.id == ingredient.id)
+            .isNotEmpty) {
+          break;
+        }
+
         final Ingredient match =
             Ingredient.singleMatch(ingredient.id, _ingredients);
         final _IngredientAmountItem? alreadyAddedMatch = _singleMatch(match.id);
