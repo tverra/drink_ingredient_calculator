@@ -1,0 +1,36 @@
+{
+  "included": [
+    "negroni",
+    "dry_martini",
+    "margarita",
+    "daiquiri",
+    "espresso_martini",
+    "mojito",
+    "moscow_mule",
+    "paloma",
+    "americano",
+    "french_75",
+    "gimlet",
+    "clover_club",
+    "gin_fizz",
+    "corpse_reviver",
+    "vodka_martini",
+    "vesper",
+    "aviation",
+    "long_island_iced_tea",
+    "bees_knees",
+    "bellini",
+    "ramos_gin_fizz",
+    "cosmopolitan",
+    "hanky_panky",
+    "irish_coffee",
+    "tommys_margarita",
+    "corpse_reviver_2"
+  ],
+  "skip_in_calculation": [
+    "salt",
+    "flake_salt",
+    "soda_water",
+    "whisky"
+  ]
+}

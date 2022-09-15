@@ -1,0 +1,15 @@
+{
+  "included": [
+    "pina_colada",
+    "gin_fizz",
+    "long_island_iced_tea",
+    "paloma",
+    "cosmopolitan"
+  ],
+  "skip_in_calculation": [
+    "salt",
+    "angostura_aromatic_bitters",
+    "flake_salt",
+    "soda_water"
+  ]
+}

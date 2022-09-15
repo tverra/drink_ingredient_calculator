@@ -316,6 +316,10 @@
       {
         "id": "flake_salt",
         "amount": "4 g"
+      },
+      {
+        "id": "grape_fruit_piece",
+        "amount": "1 pc"
       }
     ]
   },
@@ -617,7 +621,7 @@
       },
       {
         "id": "pineapple_juice",
-        "amount": "8 cl"
+        "amount": "4 cl"
       },
       {
         "id": "coconut_milk",
@@ -917,7 +921,7 @@
       },
       {
         "id": "coca_cola",
-        "amount": "2 dl"
+        "amount": "1 dl"
       },
       {
         "id": "lemon_peel",
