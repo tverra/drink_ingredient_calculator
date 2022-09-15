@@ -17,11 +17,12 @@ class Config {
     final Map<String, dynamic> config =
         jsonDecode(json) as Map<String, dynamic>;
 
-    final List<String> includedMaps = (config['included'] as List<dynamic>)
-        .map((dynamic e) => e as String)
-        .toList();
+    final List<String> includedMaps =
+        (config['included'] as List<dynamic>? ?? <dynamic>[])
+            .map((dynamic e) => e as String)
+            .toList();
     final List<String> skipInCalculationMaps =
-        (config['skip_in_calculation'] as List<dynamic>)
+        (config['skip_in_calculation'] as List<dynamic>? ?? <dynamic>[])
             .map((dynamic e) => e as String)
             .toList();
 
