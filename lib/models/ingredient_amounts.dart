@@ -59,6 +59,16 @@ class IngredientAmounts {
         SelectedAlternatives(ingredient, ingredientAmount.amount, selected),
       );
     }
+
+    selectedAlternatives.sort((SelectedAlternatives a, SelectedAlternatives b) {
+      if (a.requiredAmount.amount > b.requiredAmount.amount) {
+        return 1;
+      } else if (a.requiredAmount.amount == b.requiredAmount.amount) {
+        return 0;
+      } else {
+        return -1;
+      }
+    });
     return selectedAlternatives;
   }
 
