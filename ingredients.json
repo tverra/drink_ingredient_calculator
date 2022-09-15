@@ -759,6 +759,11 @@
         "type": "Coca-Cola 1,5l"
       },
       {
+        "amount": "3 l",
+        "price": 59.80,
+        "type": "Coca-Cola 1,5l"
+      },
+      {
         "amount": "6 l",
         "price": 84.90,
         "type": "Coca-Cola 4stk x 1,5l"

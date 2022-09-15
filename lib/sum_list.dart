@@ -7,7 +7,7 @@ import 'package:drink_calculator/models/ingredient.dart';
 import 'package:drink_calculator/models/ingredient_amounts.dart';
 import 'package:drink_calculator/utils.dart';
 
-void calculateCost(ArgResults args) {
+void summarizeList(ArgResults args) {
   final String fileName = args[constants.fileNameOption] as String;
   final Config config = readConfig(fileName);
   final List<Ingredient> ingredients = readIngredients();
